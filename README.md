@@ -15,7 +15,7 @@
 
 Not your typical financial strategic decision assistant app!
 
-**JeffreyWoo HSI Stock Predictor** is a **locally deployed AI-powered financial strategic decision assistant app** that runs entirely on your own hardware. It fine-tunes large language model (Qwen2.5-7B) with Low-Rank Adaptation (LoRA) running on high-performance GPUs (NVIDIA RTX 5090 GPU) for Hang Seng Index (HSI) company analysis without relying on cloud APIs or external services. It is designed to help businesses and professionals make smarter, faster and more confident financial choices.
+**JeffreyWoo HSI Stock Predictor** is a **locally deployed** AI-powered financial strategic decision assistant app that runs entirely on your own hardware. It fine-tunes large language model (Qwen2.5-7B) with Low-Rank Adaptation (LoRA) running on high-performance GPUs (NVIDIA RTX 5090 GPU) for Hang Seng Index (HSI) company analysis without relying on cloud APIs or external services. It is designed to help businesses and professionals make smarter, faster and more confident financial choices.
 
 **⚠️ Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
 
