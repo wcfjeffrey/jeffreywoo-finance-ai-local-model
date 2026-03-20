@@ -29,12 +29,14 @@ Not your typical financial strategic decision assistant app!
 Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further — embedding AI into your decision-making process so you can anticipate risks, seize opportunities, and align financial strategies with long-term goals.
 
 ## 🤖 Tech Stack
-- **Language** — Python (backend), HTML/CSS/JavaScript (frontend)
+- **Language** — Python 3.10 (backend), HTML/CSS/JavaScript (frontend)
 - **Framework** — Flask (backend) + Vanilla HTML/CSS/JavaScript (frontend)
 - **UI** — Standard HTML5/CSS3, styled with modern CSS, enhanced with vanilla JavaScript
-- **Runtime** — Python 3.10+ (PyTorch 2.7.1 with CUDA 12.8 for model inference)
-- **Model** — Fine-tuned Qwen2.5‑7B with LoRA adapters
-- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM)
+- **ML/AI Libraries** — PyTorch 2.7.1, Transformers, PEFT, bitsandbytes, Accelerate
+- **Model Architecture** — Qwen2.5-7B with LoRA (Low-Rank Adaptation)
+- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM) with CUDA 12.8
+- **Containerization** — Docker with NVIDIA Container Toolkit
+- **Data Processing** — Pandas, NumPy, yFinance
 
 ## 💰 Modeling & AI Techniques Applied
 This app leverages AI and machine learning (ML) methods to automate analysis of Hang Seng Index (HSI) stock movements and generate predictive insights:
