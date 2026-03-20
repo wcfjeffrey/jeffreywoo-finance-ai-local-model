@@ -173,7 +173,7 @@ Go to Releases
 Download adapter_model.safetensors  
 Place it in models/lora_adapters/final/
 
-🏗️ Local Architecture
+## 🏗️ Local Architecture
 
 ┌─────────────────────────────────────────────────────────────┐  
 │                    YOUR LOCAL COMPUTER                      │  
@@ -195,7 +195,7 @@ Place it in models/lora_adapters/final/
 │  Data Storage: Local SSD | Models: models/lora_adapters/    │  
 └─────────────────────────────────────────────────────────────┘
 
-🎯 Sample API Response
+## 🎯 Sample API Response
 
 {  
   "response": "Based on technical analysis, Tencent (0700.HK) shows bullish momentum with strong support at HKD 375. The P/E ratio of 25 is below sector average, suggesting undervaluation. Gaming revenue growth of 15% YoY indicates healthy fundamentals. Short-term price target: HKD 395-405.",  
@@ -208,7 +208,7 @@ Place it in models/lora_adapters/final/
   }  
 }
 
-🙏 Why Local Deployment?
+## 🙏 Why Local Deployment?
 
 | Cloud-Based | This Local Project |
 |-------------|--------------------|
@@ -223,13 +223,13 @@ MIT License - Free for local deployment and modification.
 
 ## 👨‍💻 Developer
 **Jeffrey Woo**  
-**GitHub:** @wcfjeffrey  
-**Project:** JeffreyWoo HSI Stock Predictor
+- **GitHub:** [@wcfjeffrey](https://github.com/wcfjeffrey/)  
+- **Project:** JeffreyWoo HSI Stock Predictor
 
 ## 🙏 Acknowledgments
-Qwen Team for the Qwen2.5-7B model  
-Hugging Face for transformers and PEFT libraries  
-PyTorch Team for CUDA 12.8 support  
-NVIDIA for RTX 5090 GPU architecture
+- **Qwen** for the Qwen2.5-7B model  
+- **Hugging Face** for transformers and PEFT libraries  
+- **PyTorch** for CUDA 12.8 support  
+- **NVIDIA** for RTX 5090 GPU architecture
 
 Built with ❤️ for local AI deployment | Runs entirely on your own hardware
