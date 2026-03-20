@@ -222,7 +222,7 @@ jeffreywoo-finance-ai-local-model/
 ├── 📁 scripts/                # Utility scripts  
 │      ├── deploy.ps1  
 │      ├── stop.ps1  
-│      └── test_api.ps1 
+│      └── test_api.ps1  
 ├── 📁 docker/                 # Docker configuration  
 │      ├── Dockerfile  
 │      └── docker-compose.yml  
