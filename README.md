@@ -81,22 +81,22 @@ python webapp/app.py  # Cross-platform
 
 ## 9. Project Structure
 
-hsi-stock-prediction-deepseek/
-├── 📁 webapp/                 # Local web interface
-│   ├── app.py                 # Flask backend (runs locally)
-│   └── static/                # CSS & JS (served locally)
-├── 📁 src/                    # Local source code
-│   ├── data/                  # Local data collection
-│   ├── models/                # Local model training
-│   └── deployment/            # Local API server
-├── 📁 configs/       # Configuration files
-├── 📁 scripts/       # Utility scripts
-├── 📁 data/          # Data directory
-├── 📁 models/        # Trained models
-│   └── lora_adapters/final/   # LoRA weights (50MB)
-├── 📁 docker/        # Docker deployment
-├── 📄 launch_webapp.ps1       # One-click local launch
-├── 📄 README.md               # This documentation
+hsi-stock-prediction-deepseek/  
+├── 📁 webapp/                 # Local web interface  
+│   ├── app.py                 # Flask backend (runs locally)  
+│   └── static/                # CSS & JS (served locally)  
+├── 📁 src/                    # Local source code  
+│   ├── data/                  # Local data collection  
+│   ├── models/                # Local model training  
+│   └── deployment/            # Local API server  
+├── 📁 configs/       # Configuration files  
+├── 📁 scripts/       # Utility scripts  
+├── 📁 data/          # Data directory  
+├── 📁 models/        # Trained models  
+│   └── lora_adapters/final/   # LoRA weights (50MB)  
+├── 📁 docker/        # Docker deployment  
+├── 📄 launch_webapp.ps1       # One-click local launch  
+├── 📄 README.md               # This documentation  
 └── 📄 logs/          # Log files
 
 ## 10. Documentation
