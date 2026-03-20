@@ -13,9 +13,53 @@
 
 ## 📊 Overview
 
-**JeffreyWoo HSI Stock Predictor** is a **locally deployed AI system** that runs entirely on your own hardware. It fine-tunes large language models for Hong Kong stock market analysis without relying on cloud APIs or external services.
+Not your typical financial strategic decision assistant app!
+
+**JeffreyWoo HSI Stock Predictor** is a **locally deployed AI-powered financial strategic decision assistant app** that runs entirely on your own hardware. It fine-tunes large language model (LLM) for Hong Kong stock market analysis for Hang Seng Index (HSI) companies without relying on cloud APIs or external services. It is designed to help businesses and professionals make smarter, faster, and more confident financial choices. This project showcases local deployment with fine-tuned models running on high-performance GPUs (NVIDIA).
 
 **⚠️ Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
+
+## ✨ What It Does
+- 📊 **Real-Time Financial Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive models
+- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment, budgeting, and risk management
+- 🔍 **Scenario Simulation Engine** — explore “what-if” models to evaluate outcomes before making decisions
+- 🌍 **Multi-Market Analysis** — support financial insights across APAC, US, and Europe
+- 🔒 **Enterprise-Grade Security** — built with reproducible workflows and scalable architecture
+
+## 🚀 Why Choose JeffreyWooFinance
+Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further — embedding AI into your decision-making process so you can anticipate risks, seize opportunities, and align financial strategies with long-term goals.
+
+## 🤖 Tech Stack
+- **Language** — Python (backend), TypeScript + HTML (frontend)
+- **Framework** — Flask API + React (with Vite build tool)
+- **UI** — Standard React components, styled via TSX
+- **Runtime** — Node.js for frontend, PyTorch 2.7.1 with CUDA 12.8 for model inference
+- **Model** — Fine-tuned Qwen2.5‑7B with LoRA adapters
+- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM)
+
+## 💰 Financial Theories Applied
+This app leverages accounting and finance principles to automate analysis of corporate performance, investment decisions, and compliance reporting:
+- **Financial Statement Analysis** — ratio analysis (EBITDA margin, net profit margin) for benchmarking
+- **DuPont Framework** — decompose ROE into margin, turnover, and leverage
+- **DCF, NPV & IRR** — scenario simulations for valuation and investment projects
+- **CAPM & WACC** — cost of equity and financing decisions
+- **Variance & Sensitivity Analysis** — stochastic simulations for stress testing
+- **Cash Flow Statement Interpretation** — liquidity risk detection
+- **Consolidation & Group Structures** — compliance with CFC regimes
+
+## 💡 Finance Transformation Impact
+- Digitizing strategic finance workflows with predictive modeling & real‑time insights
+- Enhancing executive decision‑making through scenario simulations & ROI/payback analysis
+- Optimizing liquidity & risk management with automated forecasting tools
+- Driving enterprise transformation by aligning financial strategies with long‑term organizational goals
+- Promoting responsible innovation with secure handling of sensitive financial dat
+
+## ⭐ Finance Skills Strengthened
+• 	Full-stack architecture for finance applications
+• 	Secure handling of financial data & environment variables
+• 	AI model integration into financial workflows
+• 	ERP dataset parsing & transformation
+• 	Interactive dashboards & state management in React
 
 ## ✨ Key Features
 
@@ -55,7 +99,12 @@ This project is designed to run **completely locally** on your own hardware. No 
 | ❌ Model Weights | **Excluded** | 154 MB - must be trained locally |
 | ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
 
-## 🔧 Quick Start Guide
+## ⚖️ Disclaimer
+JeffreyWooFinance provides AI-driven insights for informational purposes only. It does not replace professional financial expert advice.
+
+## ⚙️ Run Locally
+
+**Prerequisites:** Node.js, Python, CUDA-enabled GPU
 
 ### Step 1: Clone the Repository
 
@@ -119,6 +168,8 @@ Model saved to: ./models/lora_adapters/final/
 python webapp/app.py  
 
 Then open http://localhost:5001 in your browser.
+
+**Note:** Run **JeffreyWoo HSI Stock Predictor** to generate insights, simulations and recommendations.
 
 ## 🐳 Docker Deployment (Optional)
 
@@ -205,6 +256,10 @@ Pre-trained weights will be available via GitHub Releases:
   └─────────────────────────────────────────────────────────────┘</pre>
 
 ## 🎯 Sample Response in Web Interface
+
+The app provides HSI stock movement predictions via a Flask API and web UI at http://localhost:5001.
+
+Example output:
 
   <img src="assets/JeffreyWooHSIStockPredictor1.png" alt="JeffreyWooHSIStockPredictor1" width="1200" height="800" />
   <img src="assets/JeffreyWooHSIStockPredictor2.png" alt="JeffreyWooHSIStockPredictor2" width="1200" height="800" />
