@@ -199,17 +199,17 @@ jeffreywoo-finance-ai-local-model/
 ├── 📁 webapp/                 # Local web interface  
 │      ├── app.py                 # Flask backend (runs locally)  
 │      ├── templates/  
-│      │   └── index.html         # Frontend UI 
+│      │   └── index.html         # Frontend UI  
 │      └── static/                # CSS & JavaScript  
 │          ├── css/  
 │          │    └── style.css  
 │          └── js/  
 │               └── script.js  
-├── 📁 src/                    # Source code
+├── 📁 src/                    # Source code  
 │      ├── __init__.py  
 │      ├── data/                  # Data collection scripts  
 │      │   ├── __init__.py  
-│      │   └── collector.py 
+│      │   └── collector.py  
 │      ├── models/                # Model training scripts  
 │      │   ├── __init__.py  
 │      │   └── finetune.py  
