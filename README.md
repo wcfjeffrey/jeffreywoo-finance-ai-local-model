@@ -21,9 +21,8 @@ Not your typical financial strategic decision assistant app!
 
 ## ✨ What It Does
 - 📊 **Real-Time Financial Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive models
-- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment, budgeting and risk management
-- 🔍 **Scenario Simulation Engine** — explore “what-if” models to evaluate outcomes before making decisions
-- 🌍 **Multi-Market Analysis** — support financial insights across APAC, US and Europe
+- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment and risk management
+- 🌍 **HK Stock Market Analysis** — support financial insights in Hong Kong stock market
 - 🔒 **Enterprise-Grade Security** — built with reproducible workflows and scalable architecture
 
 ## 🚀 Why Choose JeffreyWoo HSI Stock Predictor
@@ -37,15 +36,16 @@ Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further 
 - **Model** — Fine-tuned Qwen2.5‑7B with LoRA adapters
 - **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM)
 
-## 💰 Financial Theories Applied
-This app leverages accounting and finance principles to automate analysis of corporate performance, investment decisions and compliance reporting:
-- **Financial Statement Analysis** — ratio analysis (EBITDA margin, net profit margin) for benchmarking
-- **DuPont Framework** — decompose ROE into margin, turnover and leverage
-- **DCF, NPV & IRR** — scenario simulations for valuation and investment projects
-- **CAPM & WACC** — cost of equity and financing decisions
-- **Variance & Sensitivity Analysis** — stochastic simulations for stress testing
-- **Cash Flow Statement Interpretation** — liquidity risk detection
-- **Consolidation & Group Structures** — compliance with CFC regimes
+## 💰 Modeling & AI Techniques Applied
+This app leverages AI and machine learning (ML) methods to automate analysis of Hang Seng Index (HSI) stock movements and generate predictive insights:
+- **LoRA Fine‑Tuning** — parameter‑efficient adaptation of Qwen2.5‑7B for financial text and time‑series data
+- **Transformer‑Based Language Modeling** — contextual understanding of financial news, market sentiment, and structured datasets
+- **Time‑Series Forecasting** — integration of historical HSI data for directional movement prediction
+- **Sentiment Analysis** — parsing financial headlines and reports to detect bullish/bearish signals
+- **Feature Engineering** — combining technical indicators (moving averages, candlesticks, volatility measures) with textual features
+- **Scenario Simulation** — generating “what‑if” outcomes based on market conditions and model predictions
+- **Confidence Scoring** — probabilistic outputs to quantify prediction reliability
+- **GPU‑Accelerated Inference** — optimized deployment on NVIDIA RTX 5090 with CUDA 12.8 + PyTorch 2.7.1
 
 ## 💡 Finance Transformation Impact
 - Digitizing strategic finance workflows with predictive modeling & real‑time insights
