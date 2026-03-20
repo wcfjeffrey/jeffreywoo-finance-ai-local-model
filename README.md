@@ -175,24 +175,24 @@ Place it in models/lora_adapters/final/
 
 🏗️ Local Architecture
 
-┌─────────────────────────────────────────────────────────────┐
-│                    YOUR LOCAL COMPUTER                      │
-│                     (MSI Titan 18 HX)                       │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │
-│  │   Web UI    │◄──►│  Flask API  │◄──►│ Fine-tuned  │      │
-│  │ localhost:  │    │  localhost: │    │    Qwen     │      │
-│  │    5001     │    │    5001     │    │   2.5-7B    │      │
-│  └─────────────┘    └─────────────┘    └─────────────┘      │
-│         ▲                  ▲                  ▲             │
-│         │                  │                  │             │
-│         ▼                  ▼                  ▼             │
-│  ┌─────────────────────────────────────────────────────┐    │
-│  │           NVIDIA RTX 5090 GPU (24GB VRAM)           │    │
-│  │              CUDA 12.8 | PyTorch 2.7.1              │    │
-│  └─────────────────────────────────────────────────────┘    │
-│                                                             │
-│  Data Storage: Local SSD | Models: models/lora_adapters/    │
+┌─────────────────────────────────────────────────────────────┐  
+│                    YOUR LOCAL COMPUTER                      │  
+│                     (MSI Titan 18 HX)                       │  
+├─────────────────────────────────────────────────────────────┤  
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │  
+│  │   Web UI    │◄──►│  Flask API  │◄──►│ Fine-tuned  │      │  
+│  │ localhost:  │    │  localhost: │    │    Qwen     │      │  
+│  │    5001     │    │    5001     │    │   2.5-7B    │      │  
+│  └─────────────┘    └─────────────┘    └─────────────┘      │  
+│         ▲                  ▲                  ▲             │  
+│         │                  │                  │             │  
+│         ▼                  ▼                  ▼             │  
+│  ┌─────────────────────────────────────────────────────┐    │  
+│  │           NVIDIA RTX 5090 GPU (24GB VRAM)           │    │  
+│  │              CUDA 12.8 | PyTorch 2.7.1              │    │  
+│  └─────────────────────────────────────────────────────┘    │  
+│                                                             │  
+│  Data Storage: Local SSD | Models: models/lora_adapters/    │  
 └─────────────────────────────────────────────────────────────┘
 
 🎯 Sample API Response
@@ -205,7 +205,7 @@ Place it in models/lora_adapters/final/
     "model": "Qwen2.5-7B-FineTuned",  
     "developer": "JeffreyWoo",  
     "location": "Local GPU (RTX 5090)"  
-  }
+  }  
 }
 
 🙏 Why Local Deployment?
