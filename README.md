@@ -26,7 +26,7 @@ Not your typical financial strategic decision assistant app!
 - 🌍 **Multi-Market Analysis** — support financial insights across APAC, US and Europe
 - 🔒 **Enterprise-Grade Security** — built with reproducible workflows and scalable architecture
 
-## 🚀 Why Choose JeffreyWooFinance
+## 🚀 Why Choose JeffreyWoo HSI Stock Predictor
 Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further — embedding AI into your decision-making process so you can anticipate risks, seize opportunities, and align financial strategies with long-term goals.
 
 ## 🤖 Tech Stack
