@@ -42,16 +42,16 @@ This project is designed to run **completely locally** on your own hardware. No 
 ## Quick Local Start
 
 ### 1. Clone the repository
-git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git
+git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git  
 cd jeffreywoo-finance-ai-local-model
 
 ### 2. Create local virtual environment
-python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
+python -m venv .venv  
+source .venv/bin/activate  # Linux/Mac  
 .venv\Scripts\activate     # Windows
 
 ### 3. Install dependencies locally
-pip install -r requirements.txt
+pip install -r requirements.txt  
 pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
 
 ### 4. Collect Data
