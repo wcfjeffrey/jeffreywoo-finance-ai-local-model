@@ -48,18 +48,18 @@ This app leverages AI and machine learning (ML) methods to automate analysis of 
 - **GPU‑Accelerated Inference** — optimized deployment on NVIDIA RTX 5090 with CUDA 12.8 + PyTorch 2.7.1
 
 ## 💡 Finance Transformation Impact
-- Digitizing strategic finance workflows with predictive modeling & real‑time insights
-- Enhancing executive decision‑making through scenario simulations & ROI/payback analysis
-- Optimizing liquidity & risk management with automated forecasting tools
-- Driving enterprise transformation by aligning financial strategies with long‑term organizational goals
-- Promoting responsible innovation with secure handling of sensitive financial dat
+- Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
+- Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
+- Strengthening risk management with GPU‑accelerated forecasting tools that run entirely on local hardware
+- Driving transformation by aligning AI‑powered analytics with organizational strategy and compliance needs
+- Promoting responsible innovation with secure, local deployment that keeps sensitive financial data private
 
 ## ⭐ Finance Skills Strengthened
-• 	Full-stack architecture for finance applications
-• 	Secure handling of financial data & environment variables
-• 	AI model integration into financial workflows
-• 	ERP dataset parsing & transformation
-• 	Interactive dashboards & state management in React
+- Designing and deploying full‑stack AI applications for finance
+- Implementing secure environment management and reproducible workflows
+- Integrating fine‑tuned language models (LoRA + Qwen2.5‑7B) into financial analysis pipelines
+- Building data preprocessing and transformation workflows for stock market datasets
+- Developing interactive dashboards and APIs with React, Flask, and Node.js for real‑time insights
 
 ## ✨ Key Features
 
