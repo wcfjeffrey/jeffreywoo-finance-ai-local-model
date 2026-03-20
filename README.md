@@ -205,18 +205,9 @@ Pre-trained weights will be available via GitHub Releases:
 │  Data Storage: Local SSD | Models: models/lora_adapters/    │  
 └─────────────────────────────────────────────────────────────┘
 
-## 🎯 Sample API Response
+## 🎯 Sample Response in Web Interface
 
-{  
-  "response": "Based on technical analysis, Tencent (0700.HK) shows bullish momentum with strong support at HKD 375. The P/E ratio of 25 is below sector average, suggesting undervaluation. Gaming revenue growth of 15% YoY indicates healthy fundamentals. Short-term price target: HKD 395-405.",  
-  "metadata": {  
-    "inference_time_ms": 142.3,  
-    "device": "cuda",  
-    "model": "Qwen2.5-7B-FineTuned",  
-    "developer": "JeffreyWoo",  
-    "location": "Local GPU (RTX 5090)"  
-  }  
-}
+  <img src="assets/JeffreyWooHSIStockPredictor1.png" alt="JeffreyWooHSIStockPredictor1" width="1200" height="600" />
 
 ## 🙏 Why Local Deployment?
 
