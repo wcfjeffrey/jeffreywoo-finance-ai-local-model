@@ -21,9 +21,9 @@ Not your typical financial strategic decision assistant app!
 
 ## ✨ What It Does
 - 📊 **Real-Time Financial Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive models
-- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment, budgeting, and risk management
+- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment, budgeting and risk management
 - 🔍 **Scenario Simulation Engine** — explore “what-if” models to evaluate outcomes before making decisions
-- 🌍 **Multi-Market Analysis** — support financial insights across APAC, US, and Europe
+- 🌍 **Multi-Market Analysis** — support financial insights across APAC, US and Europe
 - 🔒 **Enterprise-Grade Security** — built with reproducible workflows and scalable architecture
 
 ## 🚀 Why Choose JeffreyWooFinance
@@ -38,9 +38,9 @@ Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further 
 - **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM)
 
 ## 💰 Financial Theories Applied
-This app leverages accounting and finance principles to automate analysis of corporate performance, investment decisions, and compliance reporting:
+This app leverages accounting and finance principles to automate analysis of corporate performance, investment decisions and compliance reporting:
 - **Financial Statement Analysis** — ratio analysis (EBITDA margin, net profit margin) for benchmarking
-- **DuPont Framework** — decompose ROE into margin, turnover, and leverage
+- **DuPont Framework** — decompose ROE into margin, turnover and leverage
 - **DCF, NPV & IRR** — scenario simulations for valuation and investment projects
 - **CAPM & WACC** — cost of equity and financing decisions
 - **Variance & Sensitivity Analysis** — stochastic simulations for stress testing
@@ -94,8 +94,8 @@ This project is designed to run **completely locally** on your own hardware. No 
 | ✅ Web Application | Included | Flask-based UI with HTML/CSS/JS |
 | ✅ Docker Configuration | Included | Dockerfile and docker-compose for containerization |
 | ✅ Documentation | Included | Complete setup and usage guides |
-| ✅ Model Configurations | Included | LoRA config, tokenizer, and training metrics |
-| ✅ Training Scripts | Included | Data collection, preprocessing, and fine-tuning |
+| ✅ Model Configurations | Included | LoRA config, tokenizer and training metrics |
+| ✅ Training Scripts | Included | Data collection, preprocessing and fine-tuning |
 | ❌ Model Weights | **Excluded** | 154 MB - must be trained locally |
 | ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
 
