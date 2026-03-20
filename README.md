@@ -29,10 +29,10 @@ Not your typical financial strategic decision assistant app!
 Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further — embedding AI into your decision-making process so you can anticipate risks, seize opportunities, and align financial strategies with long-term goals.
 
 ## 🤖 Tech Stack
-- **Language** — Python (backend), TypeScript + HTML (frontend)
-- **Framework** — Flask API + React (with Vite build tool)
-- **UI** — Standard React components, styled via TSX
-- **Runtime** — Node.js for frontend, PyTorch 2.7.1 with CUDA 12.8 for model inference
+- **Language** — Python (backend), HTML/CSS/JavaScript (frontend)
+- **Framework** — Flask (backend) + Vanilla HTML/CSS/JavaScript (frontend)
+- **UI** — Standard HTML5/CSS3, styled with modern CSS, enhanced with vanilla JavaScript
+- **Runtime** — Python 3.10+ (PyTorch 2.7.1 with CUDA 12.8 for model inference)
 - **Model** — Fine-tuned Qwen2.5‑7B with LoRA adapters
 - **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM)
 
@@ -188,7 +188,7 @@ After training, your model should achieve:
 | **Training Loss** | ~1.3 | 
 | **Inference Time** | 100-200 ms (GPU) |  
 | **Model Size (LoRA)** | ~50 MB | 
-| **VRAM Usage** | 12-15 GB| 
+| **VRAM Usage** | 12-15 GB (approximate, depends on batch size and sequence length)| 
 
 ## 📁 Project Structure
 
