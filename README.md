@@ -59,33 +59,36 @@ This project is designed to run **completely locally** on your own hardware. No 
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git
+git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git  
 cd jeffreywoo-finance-ai-local-model
-Step 2: Create Local Virtual Environment
 
-python -m venv .venv
-source .venv/bin/activate      # Linux/Mac
+### Step 2: Create Local Virtual Environment
+
+python -m venv .venv  
+source .venv/bin/activate      # Linux/Mac  
 .venv\Scripts\activate          # Windows
-Step 3: Install Dependencies
+
+### Step 3: Install Dependencies
 
 pip install -r requirements.txt
 pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-Step 4: Collect HSI Stock Data
+
+### Step 4: Collect HSI Stock Data
 
 python src/data/collector.py
 This downloads historical price data for Hang Seng Index constituent stocks.
 
-Step 5: Prepare Training Dataset
+### Step 5: Prepare Training Dataset
 
 python prepare_dataset.py
 This creates instruction-format training data from the collected stock prices.
 
-Step 6: Train the Model
+### Step 6: Train the Model
 
 python train_model_qwen.py
 This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 minutes on RTX 5090.
 
-Expected output:
+### Expected output:
 
 ==================================================
 HSI Stock Prediction - Fine-Tuning with Qwen2.5-7B
@@ -105,7 +108,8 @@ Epoch 3/3: [====================] 100% loss: 0.89
 
 ✅ Training Complete!
 Model saved to: ./models/lora_adapters/final/
-Step 7: Launch the Web Application
+
+### Step 7: Launch the Web Application
 
 # Windows
 .\launch_webapp.ps1
@@ -114,13 +118,13 @@ Step 7: Launch the Web Application
 python webapp/app.py
 Then open http://localhost:5001 in your browser.
 
-🐳 Docker Deployment (Optional)
+### 🐳 Docker Deployment (Optional)
 
 cd docker
 docker-compose up -d
 The API will be available at http://localhost:5000
 
-📊 Model Performance
+### 📊 Model Performance
 
 After training, your model should achieve:
 
@@ -131,7 +135,7 @@ Inference Time	100-200 ms (GPU)
 Model Size (LoRA)	~50 MB
 VRAM Usage	12-15 GB
 
-📁 Project Structure
+### 📁 Project Structure
 
 jeffreywoo-finance-ai-local-model/
 ├── 📁 webapp/                 # Local web interface
@@ -153,22 +157,22 @@ jeffreywoo-finance-ai-local-model/
 ├── 📄 requirements.txt        # Python dependencies
 └── 📄 README.md               # This documentation
 
-🎯 How to Get the Model
+### 🎯 How to Get the Model
 Since model weights are excluded from this repository, you have two options:
 
-Option 1: Train Your Own Model (Recommended)
+## Option 1: Train Your Own Model (Recommended)
+
 Follow the quick start guide above. This ensures you have the latest data and a model tailored to your needs.
 
 python src/data/collector.py      # Step 4
 python prepare_dataset.py          # Step 5
 python train_model_qwen.py         # Step 6
-Option 2: Download Pre-trained Weights (Coming Soon)
+
+## Option 2: Download Pre-trained Weights (Coming Soon)
+
 Pre-trained weights will be available via GitHub Releases:
-
 Go to Releases
-
 Download adapter_model.safetensors
-
 Place it in models/lora_adapters/final/
 
 🏗️ Local Architecture
