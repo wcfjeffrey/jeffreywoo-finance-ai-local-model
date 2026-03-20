@@ -3,8 +3,7 @@
 </div>
 
 ## Locally Deployed Fine-tuned Qwen2.5-7B with LoRA on RTX 5090 GPU
-
-### AI-Powered Stock Movement Prediction for Hang Seng Index (HSI)
+## <p> AI-Powered Stock Movement Prediction for Hang Seng Index (HSI)
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.7.1-red.svg)](https://pytorch.org/)
