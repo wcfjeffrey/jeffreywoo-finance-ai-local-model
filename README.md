@@ -20,10 +20,10 @@ Not your typical financial strategic decision assistant app!
 **⚠️ Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
 
 ## ✨ What It Does
-- 📊 **Real-Time Financial Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive models
+- 📊 **Real-Time Market Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive AI models
 - 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment and risk management
-- 🌍 **HK Stock Market Analysis** — support financial insights in Hong Kong stock market
-- 🔒 **Enterprise-Grade Security** — built with reproducible workflows and scalable architecture
+- 🌍 **Hong Kong Stock Market Focus** — provide specialized analysis tailored to equities and financial trends in Hong Kong stock market
+- 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture designed for privacy, reliability and enterprise use
 
 ## 🚀 Why Choose JeffreyWoo HSI Stock Predictor
 Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further — embedding AI into your decision-making process so you can anticipate risks, seize opportunities, and align financial strategies with long-term goals.
