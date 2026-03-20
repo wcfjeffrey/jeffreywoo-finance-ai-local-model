@@ -103,7 +103,7 @@ This project is designed to run **completely locally** on your own hardware. No 
 | ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
 
 ## ⚖️ Disclaimer
-JeffreyWooFinance provides AI-driven insights for informational purposes only. It does not replace professional financial expert advice.
+**JeffreyWoo HSI Stock Predictor** provides AI‑generated insights and predictive analytics for informational and educational purposes only. It is not intended to serve as professional financial, investment or legal advice. Users should always consult qualified financial analysts and investment experts before making financial or business decisions.
 
 ## ⚙️ Run Locally
 
