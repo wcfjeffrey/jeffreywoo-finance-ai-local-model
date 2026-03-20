@@ -76,16 +76,19 @@ pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https
 ### Step 4: Collect HSI Stock Data
 
 python src/data/collector.py  
+
 This downloads historical price data for Hang Seng Index constituent stocks.
 
 ### Step 5: Prepare Training Dataset
 
 python prepare_dataset.py  
+
 This creates instruction-format training data from the collected stock prices.
 
 ### Step 6: Train the Model
 
 python train_model_qwen.py  
+
 This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 minutes on RTX 5090.
 
 ### Expected output:
@@ -114,12 +117,14 @@ Model saved to: ./models/lora_adapters/final/
 
 # Linux/Mac
 python webapp/app.py  
+
 Then open http://localhost:5001 in your browser.
 
 ## 🐳 Docker Deployment (Optional)
 
 cd docker  
 docker-compose up -d  
+
 The API will be available at http://localhost:5000
 
 ## 📊 Model Performance
@@ -156,6 +161,7 @@ jeffreywoo-finance-ai-local-model/
 └── 📄 README.md               # This documentation
 
 ## 🎯 How to Get the Model
+
 Since model weights are excluded from this repository, you have two options:
 
 ### Option 1: Train Your Own Model (Recommended)
@@ -169,9 +175,10 @@ python train_model_qwen.py         # Step 6
 ### Option 2: Download Pre-trained Weights (Coming Soon)
 
 Pre-trained weights will be available via GitHub Releases:  
-Go to Releases  
-Download adapter_model.safetensors  
-Place it in models/lora_adapters/final/
+
+1. Go to Releases  
+2. Download adapter_model.safetensors  
+3. Place it in models/lora_adapters/final/
 
 ## 🏗️ Local Architecture
 
@@ -219,14 +226,17 @@ Place it in models/lora_adapters/final/
 | ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
 
 ## 📄 License
+
 MIT License - Free for local deployment and modification.
 
 ## 👨‍💻 Developer
+
 **Jeffrey Woo**  
 - **GitHub:** [@wcfjeffrey](https://github.com/wcfjeffrey/)  
 - **Project:** JeffreyWoo HSI Stock Predictor
 
 ## 🙏 Acknowledgments
+
 - **Qwen** for the Qwen2.5-7B model  
 - **Hugging Face** for transformers and PEFT libraries  
 - **PyTorch** for CUDA 12.8 support  
