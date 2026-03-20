@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/JeffreyWoo_HSI_Stock_Predictor.png" alt="JeffreyWoo_HSI_Stock_Predictor_Banner" width="1200" height="600" />
+  <img src="assets/JeffreyWooHSIStockPredictor.png" alt="JeffreyWooHSIStockPredictorBanner" width="1200" height="600" />
 </div>
 
 ## Locally Deployed Fine-tuned Qwen2.5-7B with LoRA on RTX 5090 GPU
