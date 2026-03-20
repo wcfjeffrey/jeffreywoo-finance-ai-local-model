@@ -198,21 +198,46 @@ After training, your model should achieve:
 jeffreywoo-finance-ai-local-model/  
 ├── 📁 webapp/                 # Local web interface  
 │      ├── app.py                 # Flask backend (runs locally)  
-│      ├── templates/index.html   # Frontend UI  
+│      ├── templates/  
+│      │   └── index.html         # Frontend UI 
 │      └── static/                # CSS & JavaScript  
-├── 📁 src/                    # Source code  
+│          ├── css/  
+│          │    └── style.css  
+│          └── js/  
+│               └── script.js  
+├── 📁 src/                    # Source code
+│      ├── __init__.py  
 │      ├── data/                  # Data collection scripts  
+│      │   ├── __init__.py  
+│      │   └── collector.py 
 │      ├── models/                # Model training scripts  
+│      │   ├── __init__.py  
+│      │   └── finetune.py  
 │      └── deployment/            # API server  
+│         ├── __init__.py  
+│         └── api_server.py  
 ├── 📁 configs/                # YAML configuration files  
+│      ├── training_config.yaml  
+│      └── deployment_config.yaml  
 ├── 📁 scripts/                # Utility scripts  
+│      ├── deploy.ps1  
+│      ├── stop.ps1  
+│      └── test_api.ps1 
 ├── 📁 docker/                 # Docker configuration  
+│      ├── Dockerfile  
+│      └── docker-compose.yml  
 ├── 📁 models/                 # Trained model directory  
-│      └── lora_adapters/final/   # LoRA weights (created after training)  
+│      └── lora_adapters/  
+│          └── final/             # LoRA weights (created after training)  
+│              ├── adapter_config.json  
+│              ├── training_metrics.json  
+│              └── README.md  
+├── 📄 .gitignore  
+├── 📄 LICENSE  
+├── 📄 requirements.txt        # Python dependencies  
 ├── 📄 train_model_qwen.py     # Main training script  
 ├── 📄 prepare_dataset.py      # Dataset preparation  
 ├── 📄 launch_webapp.ps1       # One-click launch script  
-├── 📄 requirements.txt        # Python dependencies  
 └── 📄 README.md               # This documentation
 
 ## 🎯 How to Get the Model
