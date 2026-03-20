@@ -218,15 +218,15 @@ Place it in models/lora_adapters/final/
 | ❌ Rate limits | ✅ Unlimited queries |
 | ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
 
-📄 License
+## 📄 License
 MIT License - Free for local deployment and modification.
 
-👨‍💻 Developer
-Jeffrey Woo  
-GitHub: @wcfjeffrey  
-Project: JeffreyWoo HSI Stock Predictor
+## 👨‍💻 Developer
+**Jeffrey Woo**  
+**GitHub:** @wcfjeffrey  
+**Project:** JeffreyWoo HSI Stock Predictor
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 Qwen Team for the Qwen2.5-7B model  
 Hugging Face for transformers and PEFT libraries  
 PyTorch Team for CUDA 12.8 support  
