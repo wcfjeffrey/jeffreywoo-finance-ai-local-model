@@ -67,8 +67,8 @@ python src/models/finetune.py --config configs/training_config.yaml
 .\scripts\deploy.ps1
 
 ### 7. Launch the local web app
-./launch_webapp.ps1  # Windows
-# or
+./launch_webapp.ps1  # Windows  
+or  
 python webapp/app.py  # Cross-platform
 
 ## 8. Model Performance
