@@ -62,7 +62,7 @@ This app leverages AI and machine learning (ML) methods to automate analysis of 
 - Implementing secure environment management and reproducible workflows
 - Integrating fine‑tuned language models (LoRA + Qwen2.5‑7B) into financial analysis pipelines
 - Building data preprocessing and transformation workflows for stock market datasets
-- Developing interactive dashboards and APIs with React, Flask, and Node.js for real‑time insights
+- Developing interactive dashboards and APIs with React, Flask and Node.js for real‑time insights
 
 ## ✨ Key Features
 
