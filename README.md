@@ -40,9 +40,9 @@ Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further 
 - **Data Processing** — Pandas, NumPy, yFinance
 
 ## 💰 Modeling & AI Techniques Applied
-This app leverages AI and machine learning (ML) methods to automate analysis of Hang Seng Index (HSI) stock movements and generate predictive insights:
+This app leverages AI and machine learning (ML) methods to automate analysis of Hang Seng Index (HSI) stock movements, and generate predictive insights:
 - **LoRA Fine‑Tuning** — parameter‑efficient adaptation of Qwen2.5‑7B for financial text and time‑series data
-- **Transformer‑Based Language Modeling** — contextual understanding of financial news, market sentiment, and structured datasets
+- **Transformer‑Based Language Modeling** — contextual understanding of financial news, market sentiment and structured datasets
 - **Time‑Series Forecasting** — integration of historical HSI data for directional movement prediction
 - **Sentiment Analysis** — parsing financial headlines and reports to detect bullish/bearish signals
 - **Feature Engineering** — combining technical indicators (moving averages, candlesticks, volatility measures) with textual features
