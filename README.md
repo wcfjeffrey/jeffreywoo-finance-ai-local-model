@@ -98,9 +98,3 @@ hsi-stock-prediction-deepseek/
 ├── 📄 launch_webapp.ps1       # One-click local launch  
 ├── 📄 README.md               # This documentation  
 └── 📄 logs/          # Log files
-
-## 10. Documentation
-
-- [Training Guide](docs/training_guide.md)
-- [Deployment Guide](docs/deployment_guide.md)
-- [API Reference](docs/api_reference.md)
