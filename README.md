@@ -211,6 +211,7 @@ Place it in models/lora_adapters/final/
 🙏 Why Local Deployment?
 
 | Cloud-Based | This Local Project |
+|-------------|--------------------|
 | ❌ Monthly API costs | ✅ Free forever |
 | ❌ Data sent to external servers | ✅ 100% private |
 | ❌ Internet dependency | ✅ Works offline |
