@@ -197,18 +197,18 @@ After training, your model should achieve:
 
 jeffreywoo-finance-ai-local-model/  
 ├── 📁 webapp/                 # Local web interface  
-│   ├── app.py                 # Flask backend (runs locally)  
-│   ├── templates/index.html   # Frontend UI  
-│   └── static/                # CSS & JavaScript  
+│      ├── app.py                 # Flask backend (runs locally)  
+│      ├── templates/index.html   # Frontend UI  
+│      └── static/                # CSS & JavaScript  
 ├── 📁 src/                    # Source code  
-│   ├── data/                  # Data collection scripts  
-│   ├── models/                # Model training scripts  
-│   └── deployment/            # API server  
+│      ├── data/                  # Data collection scripts  
+│      ├── models/                # Model training scripts  
+│      └── deployment/            # API server  
 ├── 📁 configs/                # YAML configuration files  
 ├── 📁 scripts/                # Utility scripts  
 ├── 📁 docker/                 # Docker configuration  
 ├── 📁 models/                 # Trained model directory  
-│   └── lora_adapters/final/   # LoRA weights (created after training)  
+│      └── lora_adapters/final/   # LoRA weights (created after training)  
 ├── 📄 train_model_qwen.py     # Main training script  
 ├── 📄 prepare_dataset.py      # Dataset preparation  
 ├── 📄 launch_webapp.ps1       # One-click launch script  
