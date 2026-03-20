@@ -1,7 +1,8 @@
-## JeffreyWoo HSI Stock Predictor (with Locally Deployed Fine-tuned Qwen2.5-7B with LoRA on RTX 5090 GPU)
+# 🏦 JeffreyWoo HSI Stock Predictor
 
-## Fine-tuned Large Language Model (LLM) for Hang Seng Index (HSI) Stock Movement Prediction
-(featured web interface, Docker containerization, and complete local deployment on personal hardware)
+## Locally Deployed Fine-tuned Qwen2.5-7B with LoRA on RTX 5090 GPU
+
+### AI-Powered Stock Movement Prediction for Hang Seng Index (HSI)
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.7.1-red.svg)](https://pytorch.org/)
@@ -14,7 +15,9 @@
 
 **JeffreyWoo HSI Stock Predictor** is a **locally deployed AI system** that runs entirely on your own hardware. It fine-tunes large language models for Hong Kong stock market analysis without relying on cloud APIs or external services.
 
-### ✨ Key Features
+**⚠️ Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
+
+## ✨ Key Features
 
 | Feature | Description |
 |---------|-------------|
@@ -32,69 +35,198 @@ This project is designed to run **completely locally** on your own hardware. No 
 
 ### Hardware Requirements
 
-| Component   | Minimum         | Recommended (Your Setup) |
-|-------------|-----------------|--------------------------|
-| **GPU**     | RTX 4090 (16GB) | ✅ RTX 5090 (24GB)       |
-| **RAM**     | 32GB            | ✅ 96GB                  |
-| **Storage** | 30GB free       | ✅ 6TB SSD               |
-| **CUDA**    | 12.1            | ✅ 12.8                  |
+| Component | Minimum | Recommended (Your Setup) |
+|-----------|---------|--------------------------|
+| **GPU** | RTX 4090 (16GB) | ✅ RTX 5090 (24GB) |
+| **RAM** | 32GB | ✅ 96GB |
+| **Storage** | 30GB free | ✅ 6TB SSD |
+| **CUDA** | 12.1 | ✅ 12.8 |
 
-## Quick Local Start
+## 📦 What's Included in This Repository
 
-### 1. Clone the repository
-git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git  
+| Item | Status | Description |
+|------|--------|-------------|
+| ✅ Python Source Code | Included | Complete training and inference pipeline |
+| ✅ Web Application | Included | Flask-based UI with HTML/CSS/JS |
+| ✅ Docker Configuration | Included | Dockerfile and docker-compose for containerization |
+| ✅ Documentation | Included | Complete setup and usage guides |
+| ✅ Model Configurations | Included | LoRA config, tokenizer, and training metrics |
+| ✅ Training Scripts | Included | Data collection, preprocessing, and fine-tuning |
+| ❌ Model Weights | **Excluded** | 154 MB - must be trained locally |
+| ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
+
+## 🔧 Quick Start Guide
+
+### Step 1: Clone the Repository
+
+git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git
 cd jeffreywoo-finance-ai-local-model
+Step 2: Create Local Virtual Environment
 
-### 2. Create local virtual environment
-python -m venv .venv  
-source .venv/bin/activate  # Linux/Mac  
-.venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate      # Linux/Mac
+.venv\Scripts\activate          # Windows
+Step 3: Install Dependencies
 
-### 3. Install dependencies locally
-pip install -r requirements.txt  
+pip install -r requirements.txt
 pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-
-### 4. Collect Data
+Step 4: Collect HSI Stock Data
 
 python src/data/collector.py
+This downloads historical price data for Hang Seng Index constituent stocks.
 
-### 5. Train Model
+Step 5: Prepare Training Dataset
 
-python src/models/finetune.py --config configs/training_config.yaml
+python prepare_dataset.py
+This creates instruction-format training data from the collected stock prices.
 
-### 6. Deploy with Docker
+Step 6: Train the Model
 
-.\scripts\deploy.ps1
+python train_model_qwen.py
+This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 minutes on RTX 5090.
 
-### 7. Launch the local web app
-./launch_webapp.ps1  # Windows  
-or  
-python webapp/app.py  # Cross-platform
+Expected output:
 
-## 8. Model Performance
+==================================================
+HSI Stock Prediction - Fine-Tuning with Qwen2.5-7B
+==================================================
 
-| Metric | Value |
-|--------|-------|
-| Directional Accuracy | 67.3% |
-| Inference Time | 85ms |
-| Model Size (LoRA) | 48MB |
+Using device: cuda
+GPU: NVIDIA GeForce RTX 5090 Laptop GPU
+VRAM: 25.7 GB
 
-## 9. Project Structure
+Loading dataset...
+Loaded 40 training samples
 
-hsi-stock-prediction-deepseek/  
-├── 📁 webapp/                 # Local web interface  
-│   ├── app.py                 # Flask backend (runs locally)  
-│   └── static/                # CSS & JS (served locally)  
-├── 📁 src/                    # Local source code  
-│   ├── data/                  # Local data collection  
-│   ├── models/                # Local model training  
-│   └── deployment/            # Local API server  
-├── 📁 configs/       # Configuration files  
-├── 📁 scripts/       # Utility scripts  
-├── 📁 data/          # Data directory  
-├── 📁 models/        # Trained models  
-│   └── lora_adapters/final/   # LoRA weights (50MB)  
-├── 📁 docker/        # Docker deployment  
-├── 📄 launch_webapp.ps1       # One-click local launch  
-├── 📄 README.md               # This documentation  
-└── 📄 logs/          # Log files
+Starting Training...
+Epoch 1/3: [====================] 100% loss: 1.85
+Epoch 2/3: [====================] 100% loss: 1.12
+Epoch 3/3: [====================] 100% loss: 0.89
+
+✅ Training Complete!
+Model saved to: ./models/lora_adapters/final/
+Step 7: Launch the Web Application
+
+# Windows
+.\launch_webapp.ps1
+
+# Linux/Mac
+python webapp/app.py
+Then open http://localhost:5001 in your browser.
+
+🐳 Docker Deployment (Optional)
+
+cd docker
+docker-compose up -d
+The API will be available at http://localhost:5000
+
+📊 Model Performance
+
+After training, your model should achieve:
+
+Metric	Expected Value
+Directional Accuracy	65-70%
+Training Loss	~1.3
+Inference Time	100-200 ms (GPU)
+Model Size (LoRA)	~50 MB
+VRAM Usage	12-15 GB
+
+📁 Project Structure
+
+jeffreywoo-finance-ai-local-model/
+├── 📁 webapp/                 # Local web interface
+│   ├── app.py                 # Flask backend (runs locally)
+│   ├── templates/index.html   # Frontend UI
+│   └── static/                # CSS & JavaScript
+├── 📁 src/                    # Source code
+│   ├── data/                  # Data collection scripts
+│   ├── models/                # Model training scripts
+│   └── deployment/            # API server
+├── 📁 configs/                # YAML configuration files
+├── 📁 scripts/                # Utility scripts
+├── 📁 docker/                 # Docker configuration
+├── 📁 models/                 # Trained model directory
+│   └── lora_adapters/final/   # LoRA weights (created after training)
+├── 📄 train_model_qwen.py     # Main training script
+├── 📄 prepare_dataset.py      # Dataset preparation
+├── 📄 launch_webapp.ps1       # One-click launch script
+├── 📄 requirements.txt        # Python dependencies
+└── 📄 README.md               # This documentation
+
+🎯 How to Get the Model
+Since model weights are excluded from this repository, you have two options:
+
+Option 1: Train Your Own Model (Recommended)
+Follow the quick start guide above. This ensures you have the latest data and a model tailored to your needs.
+
+python src/data/collector.py      # Step 4
+python prepare_dataset.py          # Step 5
+python train_model_qwen.py         # Step 6
+Option 2: Download Pre-trained Weights (Coming Soon)
+Pre-trained weights will be available via GitHub Releases:
+
+Go to Releases
+
+Download adapter_model.safetensors
+
+Place it in models/lora_adapters/final/
+
+🏗️ Local Architecture
+
+┌─────────────────────────────────────────────────────────────┐
+│                    YOUR LOCAL COMPUTER                      │
+│                     (MSI Titan 18 HX)                       │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │
+│  │   Web UI    │◄──►│  Flask API  │◄──►│ Fine-tuned  │      │
+│  │ localhost:  │    │  localhost: │    │    Qwen     │      │
+│  │    5001     │    │    5001     │    │   2.5-7B    │      │
+│  └─────────────┘    └─────────────┘    └─────────────┘      │
+│         ▲                  ▲                  ▲             │
+│         │                  │                  │             │
+│         ▼                  ▼                  ▼             │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │           NVIDIA RTX 5090 GPU (24GB VRAM)           │    │
+│  │              CUDA 12.8 | PyTorch 2.7.1              │    │
+│  └─────────────────────────────────────────────────────┘    │
+│                                                             │
+│  Data Storage: Local SSD | Models: models/lora_adapters/    │
+└─────────────────────────────────────────────────────────────┘
+
+🎯 Sample API Response
+
+{
+  "response": "Based on technical analysis, Tencent (0700.HK) shows bullish momentum with strong support at HKD 375. The P/E ratio of 25 is below sector average, suggesting undervaluation. Gaming revenue growth of 15% YoY indicates healthy fundamentals. Short-term price target: HKD 395-405.",
+  "metadata": {
+    "inference_time_ms": 142.3,
+    "device": "cuda",
+    "model": "Qwen2.5-7B-FineTuned",
+    "developer": "JeffreyWoo",
+    "location": "Local GPU (RTX 5090)"
+  }
+}
+
+🙏 Why Local Deployment?
+
+Cloud-Based	This Local Project
+❌ Monthly API costs	✅ Free forever
+❌ Data sent to external servers	✅ 100% private
+❌ Internet dependency	✅ Works offline
+❌ Rate limits	✅ Unlimited queries
+❌ Latency (500ms+)	✅ Fast (100-200ms)
+
+📄 License
+MIT License - Free for local deployment and modification.
+
+👨‍💻 Developer
+Jeffrey Woo
+GitHub: @wcfjeffrey
+Project: JeffreyWoo HSI Stock Predictor
+
+🙏 Acknowledgments
+Qwen Team for the Qwen2.5-7B model
+Hugging Face for transformers and PEFT libraries
+PyTorch Team for CUDA 12.8 support
+NVIDIA for RTX 5090 GPU architecture
+
+Built with ❤️ for local AI deployment | Runs entirely on your own hardware
