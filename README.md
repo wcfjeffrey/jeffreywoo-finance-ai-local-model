@@ -131,12 +131,13 @@ The API will be available at http://localhost:5000
 
 After training, your model should achieve:
 
-Metric	Expected Value  
-Directional Accuracy	65-70%  
-Training Loss	~1.3  
-Inference Time	100-200 ms (GPU)  
-Model Size (LoRA)	~50 MB  
-VRAM Usage	12-15 GB
+| Metric | Expected Value | 
+|--------|----------------|
+| Directional Accuracy | 65-70% |  
+| Training Loss | ~1.3 | 
+| Inference Time | 100-200 ms (GPU) |  
+| Model Size (LoRA) | ~50 MB | 
+| VRAM Usage | 12-15 GB| 
 
 ## 📁 Project Structure
 
