@@ -114,10 +114,10 @@ Model saved to: ./models/lora_adapters/final/
 
 ### Step 7: Launch the Web Application
 
-# Windows
+#### Windows
 .\launch_webapp.ps1
 
-# Linux/Mac
+#### Linux/Mac
 python webapp/app.py  
 
 Then open http://localhost:5001 in your browser.
