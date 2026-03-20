@@ -207,8 +207,11 @@ Pre-trained weights will be available via GitHub Releases:
 
 ## 🎯 Sample Response in Web Interface
 
-  <img src="assets/JeffreyWooHSIStockPredictor1.png" alt="JeffreyWooHSIStockPredictor1" width="1200" height="600" />
-
+  <img src="assets/JeffreyWooHSIStockPredictor1.png" alt="JeffreyWooHSIStockPredictor1" width="1200" height="800" />
+  <img src="assets/JeffreyWooHSIStockPredictor2.png" alt="JeffreyWooHSIStockPredictor2" width="1200" height="800" />
+  <img src="assets/JeffreyWooHSIStockPredictor3.png" alt="JeffreyWooHSIStockPredictor3" width="1200" height="800" />
+  <img src="assets/JeffreyWooHSIStockPredictor4.png" alt="JeffreyWooHSIStockPredictor4" width="1200" height="800" />
+  
 ## 🙏 Why Local Deployment?
 
 | Cloud-Based | This Local Project |
