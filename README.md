@@ -90,9 +90,7 @@ This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 min
 
 ### Expected output:
 
-==================================================
 HSI Stock Prediction - Fine-Tuning with Qwen2.5-7B
-==================================================
 
 Using device: cuda  
 GPU: NVIDIA GeForce RTX 5090 Laptop GPU  
