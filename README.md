@@ -116,13 +116,13 @@ Model saved to: ./models/lora_adapters/final/
 python webapp/app.py  
 Then open http://localhost:5001 in your browser.
 
-### 🐳 Docker Deployment (Optional)
+## 🐳 Docker Deployment (Optional)
 
 cd docker  
 docker-compose up -d  
 The API will be available at http://localhost:5000
 
-### 📊 Model Performance
+## 📊 Model Performance
 
 After training, your model should achieve:
 
@@ -133,7 +133,7 @@ Inference Time	100-200 ms (GPU)
 Model Size (LoRA)	~50 MB  
 VRAM Usage	12-15 GB
 
-### 📁 Project Structure
+## 📁 Project Structure
 
 jeffreywoo-finance-ai-local-model/  
 ├── 📁 webapp/                 # Local web interface  
@@ -155,10 +155,10 @@ jeffreywoo-finance-ai-local-model/
 ├── 📄 requirements.txt        # Python dependencies  
 └── 📄 README.md               # This documentation
 
-### 🎯 How to Get the Model
+## 🎯 How to Get the Model
 Since model weights are excluded from this repository, you have two options:
 
-## Option 1: Train Your Own Model (Recommended)
+### Option 1: Train Your Own Model (Recommended)
 
 Follow the quick start guide above. This ensures you have the latest data and a model tailored to your needs.
 
@@ -166,7 +166,7 @@ python src/data/collector.py      # Step 4
 python prepare_dataset.py          # Step 5  
 python train_model_qwen.py         # Step 6
 
-## Option 2: Download Pre-trained Weights (Coming Soon)
+### Option 2: Download Pre-trained Weights (Coming Soon)
 
 Pre-trained weights will be available via GitHub Releases:  
 Go to Releases  
