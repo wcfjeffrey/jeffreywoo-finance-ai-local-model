@@ -1,0 +1,13 @@
+﻿# Core ML/AI Libraries (CPU version for Docker testing)
+torch>=2.0.0
+transformers>=4.36.0
+accelerate>=0.25.0
+
+# API & Deployment
+flask>=2.3.0
+flask-cors>=4.0.0
+flask-limiter>=3.5.0
+
+# Utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0

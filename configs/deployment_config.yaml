@@ -1,0 +1,18 @@
+﻿api:
+  host: "0.0.0.0"
+  port: 5000
+  workers: 4
+  rate_limit: 100
+
+model:
+  path: "/app/models/lora_adapters/final"
+  base_model: "deepseek-ai/DeepSeek-R1-7B"
+  quantization: "4bit"
+
+cache:
+  type: "redis"
+  ttl: 3600
+
+monitoring:
+  health_check_interval: 30
+  metrics_enabled: true

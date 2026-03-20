@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeffreyWoo HSI Stock Predictor | AI-Powered Stock Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <span class="logo-icon">📈</span>
+                <h1>JeffreyWoo HSI Stock Predictor</h1>
+            </div>
+            <p class="tagline">AI-Powered Analysis for Hang Seng Index Stocks</p>
+            <div class="model-badge" id="modelBadge">
+                <span class="badge">Loading...</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="input-section">
+                <div class="card">
+                    <h2>Stock Analysis</h2>
+                    
+                    <!-- Example Prompts -->
+                    <div class="examples">
+                        <label>Quick Examples:</label>
+                        <div class="example-buttons" id="exampleButtons"></div>
+                    </div>
+
+                    <!-- Input Form -->
+                    <div class="form-group">
+                        <label for="instruction">Analysis Type</label>
+                        <input type="text" id="instruction" placeholder="e.g., Analyze Tencent stock movement" value="Analyze Tencent stock movement">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input">Stock Data / Context</label>
+                        <textarea id="input" rows="4" placeholder="Enter stock symbol, price, news, and other relevant information...">Tencent (0700.HK) at HKD 380, P/E ratio 25, strong gaming revenue growth</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="maxTokens">Max Tokens</label>
+                            <input type="number" id="maxTokens" value="300" min="50" max="500">
+                        </div>
+                        <div class="form-group">
+                            <label for="temperature">Temperature</label>
+                            <input type="range" id="temperature" min="0.1" max="1.5" step="0.05" value="0.7">
+                            <span id="tempValue">0.70</span>
+                        </div>
+                    </div>
+
+                    <button id="predictBtn" class="btn-primary">
+                        <span class="btn-icon">🔮</span>
+                        Generate Analysis
+                    </button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <div class="card">
+                    <h2>Analysis Result</h2>
+                    <div id="loadingIndicator" class="loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Generating analysis...</p>
+                    </div>
+                    <div id="result" class="result-content">
+                        <p class="placeholder">Click "Generate Analysis" to see AI-powered stock predictions</p>
+                    </div>
+                    <div id="metadata" class="metadata" style="display: none;"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Powered by JeffreyWoo Fine-tuned Qwen2.5-7B | RTX 5090 GPU | Hang Seng Index Analysis</p>
+            <p class="disclaimer">For educational purposes only. Not financial advice.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

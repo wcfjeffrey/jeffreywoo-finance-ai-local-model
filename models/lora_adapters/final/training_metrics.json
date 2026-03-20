@@ -1,0 +1,6 @@
+{
+  "train_loss": 1.2972532272338868,
+  "epochs_completed": 3.0,
+  "model": "Qwen2.5-7B-Instruct",
+  "train_samples": 39
+}

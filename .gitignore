@@ -1,0 +1,66 @@
+﻿
+# ============================================
+# Model Files - Excluded from Repository
+# ============================================
+
+# Large model weights
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Training checkpoints
+checkpoint-*/
+*/checkpoint-*/
+
+# Model cache
+models/base/
+models/lora_adapters/checkpoints/
+
+# Keep only configuration and documentation
+!models/lora_adapters/final/adapter_config.json
+!models/lora_adapters/final/training_metrics.json
+!models/lora_adapters/final/README.md
+!models/lora_adapters/final/tokenizer_config.json
+!models/lora_adapters/final/tokenizer.json
+!models/lora_adapters/final/chat_template.jinja
+
+# ============================================
+# Data Files
+# ============================================
+data/raw/
+data/processed/
+*.csv
+*.parquet
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# ============================================
+# IDE
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ============================================
+# OS
+# ============================================
+Thumbs.db
+desktop.ini

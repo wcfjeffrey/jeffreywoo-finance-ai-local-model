@@ -1,0 +1,28 @@
+﻿model:
+  base_model: "deepseek-ai/DeepSeek-R1-7B"
+
+lora:
+  r: 32
+  lora_alpha: 64
+  target_modules:
+    - "q_proj"
+    - "v_proj"
+    - "k_proj"
+    - "o_proj"
+  lora_dropout: 0.1
+
+training:
+  batch_size: 8
+  gradient_accumulation: 2
+  learning_rate: 2e-4
+  epochs: 5
+  warmup_ratio: 0.03
+  fp16: true
+
+data:
+  max_seq_length: 512
+  test_split: 0.1
+
+output:
+  model_dir: "models/lora_adapters/final"
+  log_dir: "logs/training"
