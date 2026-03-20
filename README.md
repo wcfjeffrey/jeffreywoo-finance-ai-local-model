@@ -203,7 +203,7 @@ Pre-trained weights will be available via GitHub Releases:
 └─────────────────────────────────────────────────────────────┘
 
 ## 🎯 Sample API Response
-
+json
 {  
   "response": "Based on technical analysis, Tencent (0700.HK) shows bullish momentum with strong support at HKD 375. The P/E ratio of 25 is below sector average, suggesting undervaluation. Gaming revenue growth of 15% YoY indicates healthy fundamentals. Short-term price target: HKD 395-405.",  
   "metadata": {  
