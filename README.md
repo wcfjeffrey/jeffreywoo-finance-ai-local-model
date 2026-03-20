@@ -2,8 +2,7 @@
   <img src="assets/JeffreyWooHSIStockPredictor.png" alt="JeffreyWooHSIStockPredictorBanner" width="1200" height="600" />
 </div>
 
-## Locally Deployed Fine-tuned Qwen2.5-7B with LoRA on RTX 5090 GPU
-## <p> AI-Powered Stock Movement Prediction for Hang Seng Index (HSI)
+## AI-Powered Stock Movement Predictor for Hang Seng Index (HSI) Companies: <p> Locally Deployed Fine-tuned Qwen2.5-7B with LoRA on RTX 5090 GPU
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.7.1-red.svg)](https://pytorch.org/)
