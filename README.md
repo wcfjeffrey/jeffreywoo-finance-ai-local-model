@@ -162,7 +162,7 @@ jeffreywoo-finance-ai-local-model/
 
 ## 🎯 How to Get the Model
 
-Since model weights are excluded from this repository, you have two options:
+Since model weights are **excluded from this repository**, you have two options:
 
 ### Option 1: Train Your Own Model (Recommended)
 
@@ -242,4 +242,4 @@ MIT License - Free for local deployment and modification.
 - **PyTorch** for CUDA 12.8 support  
 - **NVIDIA** for RTX 5090 GPU architecture
 
-Built with ❤️ for local AI deployment | Runs entirely on your own hardware
+**Built with ❤️ for local AI deployment | Runs entirely on your own hardware**
