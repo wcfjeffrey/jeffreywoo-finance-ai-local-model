@@ -107,6 +107,52 @@ LoRA Fine-Tuning:
 
 Result: 50 MB adapters (vs 28 GB full model)</pre>
 
+#### 🔄 The Fine-Tuning Process Flow
+<pre lang="markdown">
+┌─────────────────────────────────────────────────────────────────┐
+│                     LoRA Fine-Tuning Pipeline                   │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Phase 1: Data Preparation                                      │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │ HSI Stock Data → Instruction Format → Training Dataset  │    │
+│  │                                                         │    │
+│  │ Example:                                                │    │
+│  │ Instruction: "Analyze Tencent stock movement"           │    │
+│  │ Input: "Tencent at HKD 380, P/E 25, gaming +15%"        │    │
+│  │ Output: "Bullish momentum, target HKD 395-405"          │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                              ↓                                  │
+│  Phase 2: LoRA Injection                                        │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │ Qwen2.5-7B (Frozen) → Add LoRA adapters → PEFT Model    │    │
+│  │                                                         │    │
+│  │ [Attention Layer]        [LoRA Adapter]                 │    │
+│  │      W (Frozen)      +    B × A (Trainable)             │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                              ↓                                  │
+│  Phase 3: Training                                              │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │ For each batch:                                         │    │
+│  │   1. Forward pass through frozen Qwen + LoRA            │    │
+│  │   2. Calculate loss (how wrong was the prediction?)     │    │
+│  │   3. Backpropagate gradients ONLY to LoRA adapters      │    │
+│  │   4. Update B and A matrices                            │    │
+│  │                                                         │    │
+│  │ Epoch 1: Loss 2.34 → Epoch 3: Loss 0.89                 │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                              ↓                                  │
+│  Phase 4: Deployment                                            │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │ Trained Model = Base Qwen + LoRA Adapters               │    │
+│  │                                                         │    │
+│  │ You can:                                                │    │
+│  │   • Merge adapters into base model (full 28 GB)         │    │
+│  │   • Keep adapters separate (50 MB) for quick switching  │    │
+│  │   • Share only the 50 MB adapters (as you did)          │    │
+│  └─────────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────────┘</pre>
+
 ## 💡 Finance Transformation Impact
 - Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
 - Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
