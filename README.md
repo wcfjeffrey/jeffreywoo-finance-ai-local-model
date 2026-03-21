@@ -65,7 +65,7 @@ Think of it like hiring a brilliant generalist (the base model) and giving them 
 |Generic advice ("stocks may go up or down") | Provides specific, actionable analysis with price targets
 |No knowledge of Hong Kong regulations or market dynamics | Learns local market behavior and sentiment
 
-### 🧠 How LoRA Fine-Tuning Works
+### 🧠 How LoRA Fine-Tuning Works?
 
 #### Traditional Full Fine-Tuning
 
