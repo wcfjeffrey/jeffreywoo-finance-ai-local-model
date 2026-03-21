@@ -121,7 +121,7 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 |----------|---------|-------------|
 |W 📚 | Professor's existing textbook | All general knowledge (28GB Qwen2.5-7B frozen parameters)|
 |B × A 📝 | Sticky notes with finance notes (Guide on where to add knowledge B x Recipe book of financial knowledge A) | New finance expertise (50 MB trainable)|
-|New Output 🎯 | Professor textbook (unchanged) + Sticky notes (with new expertise) = Finance Expert | Combined general knowledge (W) for stock analysis expertise (B x A)|
+|New Output 🎯 | Professor textbook (unchanged) + Sticky notes (with new expertise) = Finance Expert | Combined general knowledge (W) with stock analysis expertise (B x A)|
 
 #### 🔄 The Fine-Tuning Process Flow
 <pre lang="markdown">
