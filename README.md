@@ -50,6 +50,62 @@ This app leverages AI and machine learning (ML) methods to automate analysis of 
 - **Confidence Scoring** — probabilistic outputs to quantify prediction reliability
 - **GPU‑Accelerated Inference** — optimized deployment on NVIDIA RTX 5090 with CUDA 12.8 + PyTorch 2.7.1
 
+## 🔧 Understanding LLM Fine-Tuning for Financial Applications
+
+### What is LLM Fine-Tuning?
+Large Language Models (LLMs) like Qwen2.5-7B are pre-trained on massive, general-purpose text datasets (books, websites, code). Fine-tuning is the process of adapting these general-purpose models to excel at specific tasks—in your case, Hang Seng Index stock analysis.
+
+Think of it like hiring a brilliant generalist (the base model) and giving them specialized training to become a financial analyst. The base model already understands language, reasoning, and basic concepts; fine-tuning teaches it the nuances of Hong Kong stock markets.
+
+### 🎯 Why Fine-Tune for Finance?
+Base Model Limitation	Fine-Tuning Solution
+Doesn't understand "HSI," "Tencent (0700.HK)," "P/E ratio" in context	Learns financial terminology and Hong Kong market specifics
+Can't interpret candlestick patterns or technical indicators	Trained to recognize and analyze market signals
+Generic advice ("stocks may go up or down")	Provides specific, actionable analysis with price targets
+No knowledge of Hong Kong regulations or market dynamics	Learns local market behavior and sentiment
+
+### 🧠 How LoRA Fine-Tuning Works
+
+#### Traditional Full Fine-Tuning
+
+Traditional fine-tuning updates all 7 billion parameters of the model. This is like retraining the entire brain—extremely resource-intensive.
+
+<pre lang="markdown">
+Full Fine-Tuning:
+┌─────────────────────────────────────┐
+│  Qwen2.5-7B Model                   │
+│  ┌─────────────────────────────┐    │
+│  │ All 7 Billion Parameters    │    │
+│  │ Update ALL of them          │    │
+│  │ → 28 GB of GPU memory       │    │
+│  │ → Hours of training         │    │
+│  └─────────────────────────────┘    │
+└─────────────────────────────────────┘</pre>
+
+#### LoRA (Low-Rank Adaptation) Approach
+
+LoRA takes a smarter approach. Instead of updating all parameters, it:
+Freezes the original model weights (keeps them intact)
+Injects small, trainable adapter matrices into specific layers
+Updates only these small adapters during training
+
+<pre lang="markdown">
+LoRA Fine-Tuning:
+┌─────────────────────────────────────────────────┐
+│  Qwen2.5-7B Model (Frozen)                      │
+│  ┌─────────────────────────────────────────┐    │
+│  │ Original Weights (7B params)            │    │
+│  │ 🧊 Frozen - Not Updated                 │    │
+│  └─────────────────────────────────────────┘    │
+│                      ⊕                         │
+│  ┌─────────────────────────────────────────┐    │
+│  │ LoRA Adapters (8-32 MB)                 │    │
+│  │ 🔥 Trainable - Only 0.5% of params      │    │
+│  └─────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────┘</pre>
+
+**Result:** 50 MB adapters (vs 28 GB full model)
+
 ## 💡 Finance Transformation Impact
 - Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
 - Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
