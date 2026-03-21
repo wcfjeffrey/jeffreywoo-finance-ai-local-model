@@ -111,8 +111,8 @@ Result: 50 MB adapters (vs 28 GB full model)</pre>
 
 New Output = W + (B × A)
 
-Where:
-W = Original frozen weights (knowledge the model already has)
+Where:  
+W = Original frozen weights (knowledge the model already has)  
 B × A = LoRA adapter (new financial expertise)
 
 Imagine you're a brilliant professor (the base model) with a thick textbook of knowledge (W). You need to become a finance expert.
