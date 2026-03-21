@@ -52,7 +52,7 @@ This app leverages AI and machine learning (ML) methods to automate analysis of 
 
 ## 🔧 Understanding LLM Fine-Tuning for Financial Applications
 
-### What is LLM Fine-Tuning?
+### 🤔 What is LLM Fine-Tuning?
 Large Language Models (LLMs) like Qwen2.5-7B are pre-trained on massive, general-purpose text datasets (books, websites, code). Fine-tuning is the process of adapting these general-purpose models to excel at specific tasks—in this project, Hang Seng Index stock analysis.
 
 Think of it like hiring a brilliant generalist (the base model) and giving them specialized training to become a financial analyst. The base model already understands language, reasoning, and basic concepts; fine-tuning teaches it the nuances of Hong Kong stock markets.
