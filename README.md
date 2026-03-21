@@ -55,7 +55,7 @@ This app leverages AI and machine learning (ML) methods to automate analysis of 
 - Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
 - Strengthening risk management with GPU‑accelerated forecasting tools that run entirely on local hardware
 - Driving transformation by aligning AI‑powered analytics with organizational strategy and compliance needs
-- Promoting responsible innovation with secure, local deployment that keeps sensitive financial data private
+- Promoting responsible innovation with secure, **local deployment** that keeps sensitive financial data private
 
 ## ⭐ Finance Skills Strengthened
 - Designing and deploying full‑stack AI applications for finance
