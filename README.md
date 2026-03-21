@@ -194,7 +194,7 @@ After training, your model should achieve:
 | **VRAM Usage** | 12-15 GB (approximate, depends on batch size and sequence length)| 
 
 ## 📁 Project Structure
-
+```text
 jeffreywoo-finance-ai-local-model/  
 ├── 📁 webapp/                 # Local web interface  
 │   ├── app.py                 # Flask backend (runs locally)  
@@ -239,7 +239,7 @@ jeffreywoo-finance-ai-local-model/
 ├── 📄 prepare_dataset.py      # Dataset preparation  
 ├── 📄 launch_webapp.ps1       # One-click launch script  
 └── 📄 README.md               # This documentation
-
+```
 ## 🎯 How to Get the Model
 
 Since model weights are **excluded from this repository**, you have two options:
