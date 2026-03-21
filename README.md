@@ -298,7 +298,7 @@ Then open http://localhost:5001 in your browser.
 cd docker  
 docker-compose up -d  
 
-The API will be available at http://localhost:5000
+The API will be available at http://localhost:5001
 
 ## 📊 Model Performance
 
