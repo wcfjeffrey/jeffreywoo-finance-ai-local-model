@@ -88,7 +88,7 @@ Full Fine-Tuning:
 LoRA takes a smarter approach. Instead of updating all parameters, it:  
 1. **Freezes** the original model weights (keeps them intact)  
 2. **Injects** small, trainable adapter matrices into specific layers  
-3. **Updates** only these small adapters during training
+3. **Updates only these small adapters** during training
 
 <pre lang="markdown">
 LoRA Fine-Tuning:
@@ -103,9 +103,9 @@ LoRA Fine-Tuning:
 │  │ LoRA Adapters (8-32 MB)                 │    │
 │  │ 🔥 Trainable - Only 0.5% of params      │    │
 │  └─────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────┘</pre>
+└─────────────────────────────────────────────────┘
 
-**Result:** 50 MB adapters (vs 28 GB full model)
+Result: 50 MB adapters (vs 28 GB full model)</pre>
 
 ## 💡 Finance Transformation Impact
 - Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
