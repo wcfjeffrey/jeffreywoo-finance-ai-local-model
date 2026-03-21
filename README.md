@@ -321,9 +321,9 @@ Controls how long the AI's response can be.
 
 | Setting | Effect | 
 |---------|--------|
-| Low (50-100) 🔒 | Short, concise answers. Quick summary, less detail. "Bullish. Target HKD 395."| 
-| Medium (200-300) ⚖️ | Balanced. Includes reasoning + recommendation. "Based on RSI 65 and strong gaming revenue, Tencent shows bullish momentum. Target HKD 395."| 
-| High (400-500) 📚 | Long, detailed analysis. Includes multiple factors, risk assessment, and caveats.| 
+| Low (50-100) | Short, concise answers. Quick summary, less detail. "Bullish. Target HKD 395."| 
+| Medium (200-300) | Balanced. Includes reasoning + recommendation. "Based on RSI 65 and strong gaming revenue, Tencent shows bullish momentum. Target HKD 395."| 
+| High (400-500) | Long, detailed analysis. Includes multiple factors, risk assessment, and caveats.| 
 
 **Reason:** A stock analysis needs enough space to explain why a prediction is made. Too few tokens = missing reasoning. Too many = unnecessary verbosity.
 
@@ -332,11 +332,13 @@ Controls how "creative" vs "conservative" the AI is.
 
 | Setting | Effect | 
 |---------|--------|
-| Low (0.1-0.3) 🎯 | Conservative, predictable, factual. Same input → similar output. Safe for consistent analysis.| 
-| Medium (0.5-0.8) ⚖️ | Balanced creativity. Varies phrasing but stays grounded. Recommended for most financial analysis.| 
-| High (0.9-1.5) 🎨 | Creative, varied responses. Different wording each time. Can introduce novel insights but risks less reliable outputs.| 
+| Low (0.1-0.3) | Conservative, predictable, factual. Same input → similar output. Safe for consistent analysis.| 
+| Medium (0.5-0.8) | Balanced creativity. Varies phrasing but stays grounded. Recommended for most financial analysis.| 
+| High (0.9-1.5) | Creative, varied responses. Different wording each time. Can introduce novel insights but risks less reliable outputs.| 
 
 **Reason:** Financial analysis needs consistency. Low temperature ensures the AI doesn't hallucinate or give wildly different advice for the same data. Higher temperature can be useful for exploring alternative scenarios or brainstorming.
+
+**Note:** "Temperature" refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
 
 ## 📁 Project Structure
 ```text
