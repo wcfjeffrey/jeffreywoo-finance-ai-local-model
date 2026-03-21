@@ -410,7 +410,8 @@ Example output:
 
   <img src="assets/JeffreyWooHSIStockPredictor1.png" alt="JeffreyWooHSIStockPredictor1" width="1200" height="800" />
   <img src="assets/JeffreyWooHSIStockPredictor2.png" alt="JeffreyWooHSIStockPredictor2" width="1200" height="800" />
-  <img src="assets/JeffreyWooHSIStockPredictor3.png" alt="JeffreyWooHSIStockPredictor3" width="1200" height="800" />
+  <img src="assets/JeffreyWooHSIStockPredictor3a.png" alt="JeffreyWooHSIStockPredictor3a" width="1200" height="800" />
+  <img src="assets/JeffreyWooHSIStockPredictor3b.png" alt="JeffreyWooHSIStockPredictor3b" width="1200" height="800" />
   <img src="assets/JeffreyWooHSIStockPredictor4.png" alt="JeffreyWooHSIStockPredictor4" width="1200" height="800" />
   
 ## 🙏 Why Local Deployment?
