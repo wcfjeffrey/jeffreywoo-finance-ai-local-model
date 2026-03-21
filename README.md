@@ -107,6 +107,16 @@ LoRA Fine-Tuning:
 
 Result: 50 MB adapters (vs 28 GB full model)</pre>
 
+#### 🧠 Simple Analogy for Explaining LoRA Equation: W + (B × A)
+
+Imagine you're a brilliant professor (the base model) with a thick textbook of knowledge (W). You need to become a finance expert.
+
+|Component | Analogy | What It Does|
+|----------|---------|-------------|
+|W 📚 | Professor's existing textbook | All general knowledge (7B frozen parameters)|
+|B × A 📝 | Sticky notes with finance notes | New finance expertise (50 MB trainable)|
+|New Output 🎯 | Professor + Sticky notes = Finance Expert | Combined knowledge for stock analysis|
+
 #### 🔄 The Fine-Tuning Process Flow
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
