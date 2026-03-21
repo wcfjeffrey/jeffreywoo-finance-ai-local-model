@@ -312,7 +312,9 @@ After training, your model should achieve:
 | **Model Size (LoRA)** | ~50 MB | 
 | **VRAM Usage** | 12-15 GB (approximate, depends on batch size and sequence length)| 
 
-## 🎛️ Impact of Max Tokens & Temperature on Analysis Results
+## 🎛️ Impacts of Max Tokens & Temperature on Analysis Results
+
+The web interface allows you to adjust two key parameters (Max Tokens & Temperature) that influence how the AI generates stock analysis:
 
 ### 📝 Max Tokens
 Controls how long the AI's response can be.
