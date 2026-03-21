@@ -149,7 +149,7 @@ Result: 50 MB adapters (vs 28 GB full model)</pre>
 │  │ You can:                                                │    │
 │  │   • Merge adapters into base model (full 28 GB)         │    │
 │  │   • Keep adapters separate (50 MB) for quick switching  │    │
-│  │   • Share only the 50 MB adapters (as you did)          │    │
+│  │   • Share only the 50 MB adapters                       │    │
 │  └─────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
