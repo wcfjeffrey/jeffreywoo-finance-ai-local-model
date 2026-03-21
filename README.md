@@ -58,11 +58,12 @@ Large Language Models (LLMs) like Qwen2.5-7B are pre-trained on massive, general
 Think of it like hiring a brilliant generalist (the base model) and giving them specialized training to become a financial analyst. The base model already understands language, reasoning, and basic concepts; fine-tuning teaches it the nuances of Hong Kong stock markets.
 
 ### 🎯 Why Fine-Tune for Finance?
-Base Model Limitation	Fine-Tuning Solution
-Doesn't understand "HSI," "Tencent (0700.HK)," "P/E ratio" in context	Learns financial terminology and Hong Kong market specifics
-Can't interpret candlestick patterns or technical indicators	Trained to recognize and analyze market signals
-Generic advice ("stocks may go up or down")	Provides specific, actionable analysis with price targets
-No knowledge of Hong Kong regulations or market dynamics	Learns local market behavior and sentiment
+|Base Model Limitation | Fine-Tuning Solution |
+|----------------------|----------------------|
+|Doesn't understand "HSI," "Tencent (0700.HK)," "P/E ratio" in context | Learns financial terminology and Hong Kong market specifics
+|Can't interpret candlestick patterns or technical indicators | Trained to recognize and analyze market signals
+|Generic advice ("stocks may go up or down") | Provides specific, actionable analysis with price targets
+|No knowledge of Hong Kong regulations or market dynamics | Learns local market behavior and sentiment
 
 ### 🧠 How LoRA Fine-Tuning Works
 
@@ -84,10 +85,10 @@ Full Fine-Tuning:
 
 #### LoRA (Low-Rank Adaptation) Approach
 
-LoRA takes a smarter approach. Instead of updating all parameters, it:
-Freezes the original model weights (keeps them intact)
-Injects small, trainable adapter matrices into specific layers
-Updates only these small adapters during training
+LoRA takes a smarter approach. Instead of updating all parameters, it:  
+1. **Freezes** the original model weights (keeps them intact)  
+2. **Injects** small, trainable adapter matrices into specific layers  
+3. **Updates** only these small adapters during training
 
 <pre lang="markdown">
 LoRA Fine-Tuning:
