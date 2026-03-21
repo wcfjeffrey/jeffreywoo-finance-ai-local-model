@@ -119,7 +119,7 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 
 |Component | Analogy | What It Does|
 |----------|---------|-------------|
-|W 📚 | Professor's existing textbook | All general knowledge (28GB 7B frozen parameters)|
+|W 📚 | Professor's existing textbook | All general knowledge (28GB Qwen2.5-7B frozen parameters)|
 |B × A 📝 | Sticky notes with finance notes | New finance expertise (50 MB trainable)|
 |New Output 🎯 | Professor textbook (unchanged) + Sticky notes (with new expertise) = Finance Expert | Combined knowledge for stock analysis|
 
