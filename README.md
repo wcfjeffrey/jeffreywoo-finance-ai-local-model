@@ -96,12 +96,12 @@ LoRA Fine-Tuning:
 │  Qwen2.5-7B Model (Frozen)                      │
 │  ┌─────────────────────────────────────────┐    │
 │  │ Original Weights (7B params)            │    │
-│  │ 🧊 Frozen - Not Updated                │    │
+│  │ 🧊 Frozen - Not Updated                 │    │
 │  └─────────────────────────────────────────┘    │
 │                      ⊕                         │
 │  ┌─────────────────────────────────────────┐    │
 │  │ LoRA Adapters (8-32 MB)                 │    │
-│  │ 🔥 Trainable - Only 0.5% of params     │    │
+│  │ 🔥 Trainable - Only 0.5% of params      │    │
 │  └─────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────┘
 
