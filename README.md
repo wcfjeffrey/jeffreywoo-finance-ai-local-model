@@ -323,7 +323,7 @@ Controls how long the AI's response can be.
 |---------|--------|
 | Low (50-100) | Short, concise answers. Quick summary, less detail. "Bullish. Target HKD 395."| 
 | Medium (200-300) | Balanced. Includes reasoning + recommendation. "Based on RSI 65 and strong gaming revenue, Tencent shows bullish momentum. Target HKD 395."| 
-| High (400-500) | Long, detailed analysis. Includes multiple factors, risk assessment, and caveats.| 
+| High (400-500) | Long, detailed analysis. Includes multiple factors, risk assessment and caveats.| 
 
 **Reason:** A stock analysis needs enough space to explain why a prediction is made. Too few tokens = missing reasoning. Too many = unnecessary verbosity.
 
