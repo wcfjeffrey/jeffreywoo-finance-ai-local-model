@@ -298,7 +298,11 @@ Then open http://localhost:5001 in your browser.
 cd docker  
 docker-compose up -d  
 
-The API will be available at http://localhost:5001
+The API will be available at http://localhost:5000
+
+**💡Note:** 
+**python webapp/app.py** — Runs both the web interface and API together on port 5001 as a single Flask application. This is the simplest way to get started.
+**Docker deployment (docker-compose up -d)** — Runs only the API on port 5000 inside a container, separate from the frontend. This allows better scalability, resource isolation, and production-ready separation of concerns.
 
 ## 📊 Model Performance
 
