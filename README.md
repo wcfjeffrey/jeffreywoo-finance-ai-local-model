@@ -236,8 +236,8 @@ cd jeffreywoo-finance-ai-local-model
 ### Step 2: Create Local Virtual Environment
 
 python -m venv .venv  
-source .venv/bin/activate      # Linux/Mac  
-.venv\Scripts\activate          # Windows
+source `.venv/bin/activate`      # Linux/Mac  
+`.venv\Scripts\activate`          # Windows
 
 ### Step 3: Install Dependencies
 
