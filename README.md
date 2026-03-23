@@ -229,37 +229,37 @@ This project is designed to run **completely locally** on your own hardware. No 
 **Prerequisites:** Node.js, Python, CUDA-enabled GPU
 
 ### Step 1: Clone the Repository
-
-`git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git`  
-`cd jeffreywoo-finance-ai-local-model`
-
+```
+git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git  
+cd jeffreywoo-finance-ai-local-model
+```
 ### Step 2: Create Local Virtual Environment
-
-`python -m venv .venv`  
-`source .venv/bin/activate`      # Linux/Mac  
-`.venv\Scripts\activate`          # Windows
-
+```
+python -m venv .venv  
+source .venv/bin/activate      # Linux/Mac  
+.venv\Scripts\activate          # Windows
+```
 ### Step 3: Install Dependencies
-
-`pip install -r requirements.txt`  
-`pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128`
-
+```
+pip install -r requirements.txt  
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+```
 ### Step 4: Collect HSI Stock Data
-
-`python src/data/collector.py`  
-
+```
+python src/data/collector.py  
+```
 This downloads historical price data for Hang Seng Index constituent stocks.
 
 ### Step 5: Prepare Training Dataset
-
-`python prepare_dataset.py`  
-
+```
+python prepare_dataset.py  
+```
 This creates instruction-format training data from the collected stock prices.
 
 ### Step 6: Train the Model
-
-`python train_model_qwen.py`  
-
+```
+python train_model_qwen.py  
+```
 This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 minutes on RTX 5090.
 
 #### Expected output:
@@ -295,10 +295,10 @@ Then open http://localhost:5001 in your browser.
 **Note:** Run **JeffreyWoo HSI Stock Predictor** to generate insights, simulations and recommendations.
 
 ## 🐳 Docker Deployment (Optional)
-
-`cd docker`  
-`docker-compose up -d`  
-
+```
+cd docker  
+docker-compose up -d  
+```
 The API will be available at http://localhost:5000
 
 **💡Note:**  
