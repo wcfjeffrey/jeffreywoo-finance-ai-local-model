@@ -17,7 +17,7 @@
 
 **JeffreyWoo HSI Stock Predictor** is a **locally deployed** AI-powered financial strategic decision assistant app that runs entirely on your own hardware. It fine-tunes large language model (e.g. Qwen2.5-7B) with Low-Rank Adaptation (LoRA) running on high-performance GPUs (e.g. NVIDIA RTX 5090 GPU) for Hang Seng Index (HSI) company analysis without relying on cloud APIs, external databases or services, ensuring that your data stays secure and never leaves your computer. It is designed to help businesses and professionals make smarter, faster and more confident financial choices.
 
-**⚠️ Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
+**💡Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
 
 ## ✨ What It Does
 - 📊 **Real-Time Market Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive AI models
@@ -292,7 +292,7 @@ Model saved to: ./models/lora_adapters/final/
 
 Then open http://localhost:5001 in your browser.
 
-**Note:** Run **JeffreyWoo HSI Stock Predictor** to generate insights, simulations and recommendations.
+**💡Note:** Run **JeffreyWoo HSI Stock Predictor** to generate insights, simulations and recommendations.
 
 ## 🐳 Docker Deployment (Optional)
 ```
@@ -343,7 +343,7 @@ Controls how "creative" vs "conservative" the AI is.
 
 **Reason:** Financial analysis needs consistency. Low temperature ensures the AI doesn't hallucinate or give wildly different advice for the same data. Higher temperature can be useful for exploring alternative scenarios or brainstorming.
 
-**Note:** *"Temperature"* refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
+**💡Note:** *"Temperature"* refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
 
 ## 📁 Project Structure
 ```text
