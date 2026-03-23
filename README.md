@@ -263,7 +263,7 @@ python train_model_qwen.py
 This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 minutes on RTX 5090.
 
 #### Expected output:
-
+```bash
 HSI Stock Prediction - Fine-Tuning with Qwen2.5-7B
 
 Using device: cuda  
@@ -280,6 +280,7 @@ Epoch 3/3: [====================] 100% loss: 0.89
 
 ✅ Training Complete!  
 Model saved to: ./models/lora_adapters/final/
+```
 
 ### Step 7: Launch the Web Application
 
