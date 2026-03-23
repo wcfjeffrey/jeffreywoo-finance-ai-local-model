@@ -462,11 +462,12 @@ Example output:
 
 MIT License - Free for local deployment and modification.
 
-## 👨‍💻 Developer
+## 👤 About the Author
+Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
 
-**Jeffrey Woo**  
-- **GitHub:** [@wcfjeffrey](https://github.com/wcfjeffrey/)  
-- **Project:** JeffreyWoo HSI Stock Predictor
+📧 Email: jeffreywoocf@gmail.com  
+💼 LinkedIn: https://www.linkedin.com/in/wcfjeffrey/  
+🐙 GitHub: https://github.com/wcfjeffrey/
 
 ## 🙏 Acknowledgments
 
