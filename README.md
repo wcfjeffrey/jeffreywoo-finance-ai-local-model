@@ -230,35 +230,35 @@ This project is designed to run **completely locally** on your own hardware. No 
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git  
-cd jeffreywoo-finance-ai-local-model
+`git clone https://github.com/wcfjeffrey/jeffreywoo-finance-ai-local-model.git`  
+`cd jeffreywoo-finance-ai-local-model`
 
 ### Step 2: Create Local Virtual Environment
 
-python -m venv .venv  
-source `.venv/bin/activate`      # Linux/Mac  
+`python -m venv .venv`  
+`source .venv/bin/activate`      # Linux/Mac  
 `.venv\Scripts\activate`          # Windows
 
 ### Step 3: Install Dependencies
 
-pip install -r requirements.txt  
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+`pip install -r requirements.txt`  
+`pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128`
 
 ### Step 4: Collect HSI Stock Data
 
-python src/data/collector.py  
+`python src/data/collector.py`  
 
 This downloads historical price data for Hang Seng Index constituent stocks.
 
 ### Step 5: Prepare Training Dataset
 
-python prepare_dataset.py  
+`python prepare_dataset.py`  
 
 This creates instruction-format training data from the collected stock prices.
 
 ### Step 6: Train the Model
 
-python train_model_qwen.py  
+`python train_model_qwen.py`  
 
 This fine-tunes Qwen2.5-7B with LoRA on your local GPU. Training takes 20-30 minutes on RTX 5090.
 
@@ -285,10 +285,10 @@ Model saved to: ./models/lora_adapters/final/
 ### Step 7: Launch the Web Application
 
 #### Windows
-.\launch_webapp.ps1
+`.\launch_webapp.ps1`
 
 #### Linux/Mac
-python webapp/app.py  
+`python webapp/app.py`  
 
 Then open http://localhost:5001 in your browser.
 
@@ -296,8 +296,8 @@ Then open http://localhost:5001 in your browser.
 
 ## 🐳 Docker Deployment (Optional)
 
-cd docker  
-docker-compose up -d  
+`cd docker`  
+`docker-compose up -d`  
 
 The API will be available at http://localhost:5000
 
@@ -343,7 +343,7 @@ Controls how "creative" vs "conservative" the AI is.
 
 **Reason:** Financial analysis needs consistency. Low temperature ensures the AI doesn't hallucinate or give wildly different advice for the same data. Higher temperature can be useful for exploring alternative scenarios or brainstorming.
 
-**Note:** "Temperature" refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
+**Note:** *"Temperature"* refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
 
 ## 📁 Project Structure
 ```text
@@ -400,17 +400,17 @@ Since model weights are **excluded from this repository**, you have two options:
 
 Follow the quick start guide above. This ensures you have the latest data and a model tailored to your needs.
 
-python src/data/collector.py      # Step 4  
-python prepare_dataset.py          # Step 5  
-python train_model_qwen.py         # Step 6
+`python src/data/collector.py`      # Step 4  
+`python prepare_dataset.py`          # Step 5  
+`python train_model_qwen.py`         # Step 6
 
 ### Option 2: Download Pre-trained Weights (Coming Soon)
 
 Pre-trained weights will be available via GitHub Releases:  
 
 1. Go to Releases  
-2. Download adapter_model.safetensors  
-3. Place it in models/lora_adapters/final/
+2. Download `adapter_model.safetensors`  
+3. Place it in `models/lora_adapters/final/`
 
 ## 🏗️ Local Architecture
 ```mermaid
