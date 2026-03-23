@@ -413,6 +413,32 @@ Pre-trained weights will be available via GitHub Releases:
 3. Place it in models/lora_adapters/final/
 
 ## 🏗️ Local Architecture
+```mermaid
+graph TB
+    subgraph LOCAL_COMPUTER["<b>YOUR LOCAL COMPUTER (MSI Titan 18 HX)</b>"]
+        WebUI["Web UI<br/>localhost:5001"]
+        FlaskAPI["Flask API<br/>localhost:5001"]
+        Model["Fine-tuned Qwen 2.5-7B"]
+        
+        WebUI <--> FlaskAPI
+        FlaskAPI <--> Model
+        
+        GPU["NVIDIA RTX 5090 GPU (24GB VRAM)<br/>CUDA 12.8 | PyTorch 2.7.1"]
+        
+        WebUI <--> GPU
+        FlaskAPI <--> GPU
+        Model <--> GPU
+        
+        Storage["Data Storage: Local SSD<br/>Models: models/lora_adapters/"]
+    end
+    
+    style LOCAL_COMPUTER fill:#f0f0f0,stroke:#333,stroke-width:2px
+    style WebUI fill:#e1f5fe,stroke:#0288d1
+    style FlaskAPI fill:#e1f5fe,stroke:#0288d1
+    style Model fill:#e1f5fe,stroke:#0288d1
+    style GPU fill:#fff3e0,stroke:#f57c00
+    style Storage fill:#e8f5e9,stroke:#388e3c
+```
 
 <pre lang="markdown">
   ┌─────────────────────────────────────────────────────────────┐
