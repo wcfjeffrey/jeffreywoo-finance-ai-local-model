@@ -440,27 +440,6 @@ graph TB
     style Storage fill:#e8f5e9,stroke:#388e3c
 ```
 
-<pre lang="markdown">
-  ┌─────────────────────────────────────────────────────────────┐
-  │                    YOUR LOCAL COMPUTER                      │
-  │                     (MSI Titan 18 HX)                       │
-  ├─────────────────────────────────────────────────────────────┤
-  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │
-  │  │   Web UI    │◄──►│  Flask API  │◄──►│ Fine-tuned  │      │
-  │  │ localhost:  │    │  localhost: │    │    Qwen     │      │
-  │  │    5001     │    │    5001     │    │   2.5-7B    │      │
-  │  └─────────────┘    └─────────────┘    └─────────────┘      │
-  │         ▲                  ▲                  ▲             │
-  │         │                  │                  │             │
-  │         ▼                  ▼                  ▼             │
-  │  ┌─────────────────────────────────────────────────────┐    │
-  │  │           NVIDIA RTX 5090 GPU (24GB VRAM)           │    │
-  │  │              CUDA 12.8 | PyTorch 2.7.1              │    │
-  │  └─────────────────────────────────────────────────────┘    │
-  │                                                             │
-  │  Data Storage: Local SSD | Models: models/lora_adapters/    │
-  └─────────────────────────────────────────────────────────────┘</pre>
-
 ## 🎯 Sample Response in Web Interface
 
 The app provides HSI stock movement predictions via a Flask API and web UI at http://localhost:5001.
