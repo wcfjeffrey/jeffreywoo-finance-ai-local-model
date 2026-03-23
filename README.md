@@ -414,7 +414,7 @@ Pre-trained weights will be available via GitHub Releases:
 
 ## 🏗️ Local Architecture
 <pre lang="markdown">
-┌─────────────────────────────────────────────────────────────┐
+  ┌─────────────────────────────────────────────────────────────┐
   │                    YOUR LOCAL COMPUTER                      │
   │                     (MSI Titan 18 HX)                       │
   ├─────────────────────────────────────────────────────────────┤
