@@ -465,9 +465,9 @@ MIT License - Free for local deployment and modification.
 ## 👤 About the Author
 Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
 
-📧 Email: jeffreywoocf@gmail.com  
-💼 LinkedIn: https://www.linkedin.com/in/wcfjeffrey/  
-🐙 GitHub: https://github.com/wcfjeffrey/
+📧 **Email:** jeffreywoocf@gmail.com  
+💼 **LinkedIn:** https://www.linkedin.com/in/wcfjeffrey/  
+🐙 **GitHub:** https://github.com/wcfjeffrey/
 
 ## 🙏 Acknowledgments
 
