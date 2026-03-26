@@ -200,6 +200,28 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 - Building data preprocessing and transformation workflows for stock market datasets
 - Developing interactive dashboards and APIs with React, Flask and Node.js for real‑time insights
 
+## 🏗️ Local Architecture
+<pre lang="markdown">
+  ┌─────────────────────────────────────────────────────────────┐
+  │                    YOUR LOCAL COMPUTER                      │
+  │                     (MSI Titan 18 HX)                       │
+  ├─────────────────────────────────────────────────────────────┤
+  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │
+  │  │   Web UI    │◄──►│  Flask API  │◄──►│ Fine-tuned  │      │
+  │  │ localhost:  │    │  localhost: │    │    Qwen     │      │
+  │  │    5001     │    │    5001     │    │   2.5-7B    │      │
+  │  └─────────────┘    └─────────────┘    └─────────────┘      │
+  │         ▲                  ▲                  ▲             │
+  │         │                  │                  │             │
+  │         ▼                  ▼                  ▼             │
+  │  ┌─────────────────────────────────────────────────────┐    │
+  │  │           NVIDIA RTX 5090 GPU (24GB VRAM)           │    │
+  │  │              CUDA 12.8 | PyTorch 2.7.1              │    │
+  │  └─────────────────────────────────────────────────────┘    │
+  │                                                             │
+  │  Data Storage: Local SSD | Models: models/lora_adapters/    │
+  └─────────────────────────────────────────────────────────────┘</pre>
+
 ## ✨ Key Features
 
 | Feature | Description |
@@ -419,28 +441,6 @@ Pre-trained weights will be available via GitHub Releases:
 1. Go to Releases  
 2. Download `adapter_model.safetensors`  
 3. Place it in `models/lora_adapters/final/`
-
-## 🏗️ Local Architecture
-<pre lang="markdown">
-  ┌─────────────────────────────────────────────────────────────┐
-  │                    YOUR LOCAL COMPUTER                      │
-  │                     (MSI Titan 18 HX)                       │
-  ├─────────────────────────────────────────────────────────────┤
-  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐      │
-  │  │   Web UI    │◄──►│  Flask API  │◄──►│ Fine-tuned  │      │
-  │  │ localhost:  │    │  localhost: │    │    Qwen     │      │
-  │  │    5001     │    │    5001     │    │   2.5-7B    │      │
-  │  └─────────────┘    └─────────────┘    └─────────────┘      │
-  │         ▲                  ▲                  ▲             │
-  │         │                  │                  │             │
-  │         ▼                  ▼                  ▼             │
-  │  ┌─────────────────────────────────────────────────────┐    │
-  │  │           NVIDIA RTX 5090 GPU (24GB VRAM)           │    │
-  │  │              CUDA 12.8 | PyTorch 2.7.1              │    │
-  │  └─────────────────────────────────────────────────────┘    │
-  │                                                             │
-  │  Data Storage: Local SSD | Models: models/lora_adapters/    │
-  └─────────────────────────────────────────────────────────────┘</pre>
 
 ## 🎯 Sample Response in Web Interface
 
