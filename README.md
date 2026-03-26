@@ -223,6 +223,21 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
   │  Data Storage: Local SSD | Models: models/lora_adapters/    │
   └─────────────────────────────────────────────────────────────┘</pre>
 
+## 🚀 Local Deployment
+
+This project is designed to run **completely locally** on your own hardware. No cloud services, no API keys, no recurring costs.
+  
+## 🙏 Why Local Deployment?
+
+| Cloud-Based | This Local Project |
+|-------------|--------------------|
+| ❌ Monthly API costs | ✅ Free forever |
+| ❌ Data sent to external servers | ✅ 100% private |
+| ❌ Internet dependency | ✅ Works offline |
+| ❌ Rate limits | ✅ Unlimited queries |
+| ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
+
+
 ## ✨ Key Features
 
 | Feature | Description |
@@ -246,21 +261,11 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 - **Containerization** — Docker with NVIDIA Container Toolkit
 - **Data Processing** — Pandas, NumPy, yFinance
 
-## 🚀 Local Deployment
+## ⚙️ Run Locally
 
-This project is designed to run **completely locally** on your own hardware. No cloud services, no API keys, no recurring costs.
-  
-## 🙏 Why Local Deployment?
+**Prerequisites:** Node.js, Python, CUDA-enabled GPU
 
-| Cloud-Based | This Local Project |
-|-------------|--------------------|
-| ❌ Monthly API costs | ✅ Free forever |
-| ❌ Data sent to external servers | ✅ 100% private |
-| ❌ Internet dependency | ✅ Works offline |
-| ❌ Rate limits | ✅ Unlimited queries |
-| ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
-
-### Hardware Requirements
+**Hardware Requirements**
 
 | Component | Minimum | Recommended (Your Setup) |
 |-----------|---------|--------------------------|
@@ -268,10 +273,6 @@ This project is designed to run **completely locally** on your own hardware. No 
 | **RAM** | 32GB | ✅ 96GB |
 | **Storage** | 30GB free | ✅ 6TB SSD |
 | **CUDA** | 12.1 | ✅ 12.8 |
-
-## ⚙️ Run Locally
-
-**Prerequisites:** Node.js, Python, CUDA-enabled GPU
 
 ### Step 1: Clone the Repository
 ```
