@@ -21,9 +21,9 @@
 
 ## ✨ What It Does
 - 📊 **Real-Time Market Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive AI models, providing timely insights for investment and risk management
-- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for portfolio optimization, risk mitigation, and strategic decision‑making, tailored to finance professionals
+- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for portfolio optimization, risk mitigation and strategic decision‑making, tailored to finance professionals
 - 🌍 **Hong Kong Stock Market Focus** — provide specialized analysis tailored to equities and financial trends in Hong Kong stock market, strengthening regional investment strategies
-- 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture, ensuring privacy, reliability, and enterprise‑grade performance
+- 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture, ensuring privacy, reliability and enterprise‑grade performance
 - ⚙️ **Customizable AI Parameters** — allow users to adjust max tokens and temperature settings, fine‑tuning AI outputs for either more precise or more creative financial insights
 
 ## 🎛️ Impacts of Max Tokens & Temperature on Analysis Results
