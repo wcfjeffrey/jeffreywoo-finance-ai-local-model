@@ -201,7 +201,7 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 - Building data preprocessing and transformation workflows for stock market datasets
 - Developing interactive dashboards and APIs with React, Flask and Node.js for real‑time insights
 
-## 🏗️ Local Architecture
+## 🏗️ Locally Deployed AI System Architecture
 <pre lang="markdown">
   ┌─────────────────────────────────────────────────────────────┐
   │                    YOUR LOCAL COMPUTER                      │
