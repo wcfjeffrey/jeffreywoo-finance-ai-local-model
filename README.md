@@ -20,10 +20,11 @@
 **⚠️ Note:** This repository contains **only code and documentation** (no pre-trained model weights). Model weights are excluded due to GitHub's 100 MB file size limit. You can train your own model using the provided scripts.
 
 ## ✨ What It Does
-- 📊 **Real-Time Market Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive AI models
-- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for investment and risk management
-- 🌍 **Hong Kong Stock Market Focus** — provide specialized analysis tailored to equities and financial trends in Hong Kong stock market
-- 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture designed for privacy, reliability and enterprise use
+- 📊 **Real-Time Market Intelligence** — analyze complex financial data and Hang Seng Index (HSI) market trends using predictive AI models, providing timely insights for investment and risk management
+- 🧠 **AI-Powered Strategic Guidance** — deliver actionable recommendations for portfolio optimization, risk mitigation, and strategic decision‑making, tailored to finance professionals
+- 🌍 **Hong Kong Stock Market Focus** — provide specialized analysis tailored to equities and financial trends in Hong Kong stock market, strengthening regional investment strategies
+- 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture, ensuring privacy, reliability, and enterprise‑grade performance
+- ⚙️ **Customizable AI Parameters** — allow users to adjust max tokens and temperature settings, fine‑tuning AI outputs for either more precise or more creative financial insights
 
 ## 🎛️ Impacts of Max Tokens & Temperature on Analysis Results
 
