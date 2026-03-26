@@ -198,6 +198,16 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 ## 🚀 Local Deployment
 
 This project is designed to run **completely locally** on your own hardware. No cloud services, no API keys, no recurring costs.
+  
+## 🙏 Why Local Deployment?
+
+| Cloud-Based | This Local Project |
+|-------------|--------------------|
+| ❌ Monthly API costs | ✅ Free forever |
+| ❌ Data sent to external servers | ✅ 100% private |
+| ❌ Internet dependency | ✅ Works offline |
+| ❌ Rate limits | ✅ Unlimited queries |
+| ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
 
 ### Hardware Requirements
 
@@ -207,19 +217,6 @@ This project is designed to run **completely locally** on your own hardware. No 
 | **RAM** | 32GB | ✅ 96GB |
 | **Storage** | 30GB free | ✅ 6TB SSD |
 | **CUDA** | 12.1 | ✅ 12.8 |
-
-## 📦 What's Included in This Repository
-
-| Item | Status | Description |
-|------|--------|-------------|
-| ✅ Python Source Code | Included | Complete training and inference pipeline |
-| ✅ Web Application | Included | Flask-based UI with HTML/CSS/JS |
-| ✅ Docker Configuration | Included | Dockerfile and docker-compose for containerization |
-| ✅ Documentation | Included | Complete setup and usage guides |
-| ✅ Model Configurations | Included | LoRA config, tokenizer and training metrics |
-| ✅ Training Scripts | Included | Data collection, preprocessing and fine-tuning |
-| ❌ Model Weights | **Excluded** | 154 MB - must be trained locally |
-| ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
 
 ## ⚙️ Run Locally
 
@@ -389,6 +386,20 @@ jeffreywoo-finance-ai-local-model/
 ├── 📄 launch_webapp.ps1       # One-click launch script  
 └── 📄 README.md               # This documentation
 ```
+
+## 📦 What's Included in This Repository
+
+| Item | Status | Description |
+|------|--------|-------------|
+| ✅ Python Source Code | Included | Complete training and inference pipeline |
+| ✅ Web Application | Included | Flask-based UI with HTML/CSS/JS |
+| ✅ Docker Configuration | Included | Dockerfile and docker-compose for containerization |
+| ✅ Documentation | Included | Complete setup and usage guides |
+| ✅ Model Configurations | Included | LoRA config, tokenizer and training metrics |
+| ✅ Training Scripts | Included | Data collection, preprocessing and fine-tuning |
+| ❌ Model Weights | **Excluded** | 154 MB - must be trained locally |
+| ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
+
 ## 🎯 How to Get the Model
 
 Since model weights are **excluded from this repository**, you have two options:
@@ -444,16 +455,6 @@ Example output:
   Higher Max Tokens and Temperature:
   <img src="assets/JeffreyWooHSIStockPredictor3b.png" alt="JeffreyWooHSIStockPredictor3b" width="1200" height="1000" />
   <img src="assets/JeffreyWooHSIStockPredictor4.png" alt="JeffreyWooHSIStockPredictor4" width="1200" height="800" />
-  
-## 🙏 Why Local Deployment?
-
-| Cloud-Based | This Local Project |
-|-------------|--------------------|
-| ❌ Monthly API costs | ✅ Free forever |
-| ❌ Data sent to external servers | ✅ 100% private |
-| ❌ Internet dependency | ✅ Works offline |
-| ❌ Rate limits | ✅ Unlimited queries |
-| ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
 
 ## 🙏 Acknowledgments
 
