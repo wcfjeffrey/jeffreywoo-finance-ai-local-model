@@ -25,6 +25,34 @@
 - 🌍 **Hong Kong Stock Market Focus** — provide specialized analysis tailored to equities and financial trends in Hong Kong stock market
 - 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture designed for privacy, reliability and enterprise use
 
+## 🎛️ Impacts of Max Tokens & Temperature on Analysis Results
+
+The web interface allows you to adjust two key parameters (Max Tokens & Temperature) that influence how the AI generates stock analysis:
+
+### 📝 Max Tokens
+Controls how long the AI's response can be.
+
+| Setting | Effect | 
+|---------|--------|
+| Low (50-100) | Short, concise answers. Quick summary, less detail. "Bullish. Target HKD 395."| 
+| Medium (200-300) | Balanced. Includes reasoning + recommendation. "Based on RSI 65 and strong gaming revenue, Tencent shows bullish momentum. Target HKD 395."| 
+| High (400-500) | Long, detailed analysis. Includes multiple factors, risk assessment and caveats.| 
+
+**Reason:** A stock analysis needs enough space to explain why a prediction is made. Too few tokens = missing reasoning. Too many = unnecessary verbosity.
+
+### 🌡️ Temperature
+Controls how "creative" vs "conservative" the AI is.
+
+| Setting | Effect | 
+|---------|--------|
+| Low (0.1-0.3) | Conservative, predictable, factual. Same input → similar output. Safe for consistent analysis.| 
+| Medium (0.5-0.8) | Balanced creativity. Varies phrasing but stays grounded. Recommended for most financial analysis.| 
+| High (0.9-1.5) | Creative, varied responses. Different wording each time. Can introduce novel insights but risks less reliable outputs.| 
+
+**Reason:** Financial analysis needs consistency. Low temperature ensures the AI doesn't hallucinate or give wildly different advice for the same data. Higher temperature can be useful for exploring alternative scenarios or brainstorming.
+
+**⚠️ Note:** *"Temperature"* refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
+
 ## 💡 Finance Transformation Impact
 - Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
 - Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
@@ -53,7 +81,7 @@ Large Language Models (LLMs) like Qwen2.5-7B are pre-trained on massive, general
 
 Think of it like hiring a brilliant generalist (the base model) and giving them specialized training to become a financial analyst. The base model already understands language, reasoning, and basic concepts; fine-tuning teaches it the nuances of Hong Kong stock markets.
 
-### 🎯 Why Fine-Tune for Finance?
+### 🎯 Why Fine-Tuning for Finance?
 |Base Model Limitation | Fine-Tuning Solution |
 |----------------------|----------------------|
 |Doesn't understand "HSI," "Tencent (0700.HK)," "P/E ratio" in context | Learns financial terminology and Hong Kong market specifics
@@ -172,17 +200,6 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 - Building data preprocessing and transformation workflows for stock market datasets
 - Developing interactive dashboards and APIs with React, Flask and Node.js for real‑time insights
 
-## 🤖 Tech Stack
-- **Language** — Python (backend) + Vanilla HTML/CSS/JavaScript (frontend)
-- **Framework** — Flask (backend) + Vanilla HTML/CSS/JavaScript (frontend)
-- **UI** — Standard HTML5/CSS3, styled with modern CSS, enhanced with vanilla JavaScript
-- **Runtime** — Python 3.10
-- **ML/AI Libraries** — PyTorch 2.7.1, Transformers, PEFT, bitsandbytes, Accelerate
-- **Model Architecture** — Qwen2.5-7B with LoRA (Low-Rank Adaptation)
-- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM) with CUDA 12.8
-- **Containerization** — Docker with NVIDIA Container Toolkit
-- **Data Processing** — Pandas, NumPy, yFinance
-
 ## ✨ Key Features
 
 | Feature | Description |
@@ -194,6 +211,17 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 | **🌐 Web Interface** | Beautiful local web UI at http://localhost:5001 |
 | **📊 Real-time Predictions** | Local inference with ~100-200ms response time |
 | **🔒 Privacy First** | All data stays on your computer - no external servers |
+
+## 🤖 Tech Stack
+- **Language** — Python (backend) + Vanilla HTML/CSS/JavaScript (frontend)
+- **Framework** — Flask (backend) + Vanilla HTML/CSS/JavaScript (frontend)
+- **UI** — Standard HTML5/CSS3, styled with modern CSS, enhanced with vanilla JavaScript
+- **Runtime** — Python 3.10
+- **ML/AI Libraries** — PyTorch 2.7.1, Transformers, PEFT, bitsandbytes, Accelerate
+- **Model Architecture** — Qwen2.5-7B with LoRA (Low-Rank Adaptation)
+- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM) with CUDA 12.8
+- **Containerization** — Docker with NVIDIA Container Toolkit
+- **Data Processing** — Pandas, NumPy, yFinance
 
 ## 🚀 Local Deployment
 
@@ -310,34 +338,6 @@ After training, your model should achieve:
 | **Inference Time** | 100-200 ms (GPU) |  
 | **Model Size (LoRA)** | ~50 MB | 
 | **VRAM Usage** | 12-15 GB (approximate, depends on batch size and sequence length)| 
-
-## 🎛️ Impacts of Max Tokens & Temperature on Analysis Results
-
-The web interface allows you to adjust two key parameters (Max Tokens & Temperature) that influence how the AI generates stock analysis:
-
-### 📝 Max Tokens
-Controls how long the AI's response can be.
-
-| Setting | Effect | 
-|---------|--------|
-| Low (50-100) | Short, concise answers. Quick summary, less detail. "Bullish. Target HKD 395."| 
-| Medium (200-300) | Balanced. Includes reasoning + recommendation. "Based on RSI 65 and strong gaming revenue, Tencent shows bullish momentum. Target HKD 395."| 
-| High (400-500) | Long, detailed analysis. Includes multiple factors, risk assessment and caveats.| 
-
-**Reason:** A stock analysis needs enough space to explain why a prediction is made. Too few tokens = missing reasoning. Too many = unnecessary verbosity.
-
-### 🌡️ Temperature
-Controls how "creative" vs "conservative" the AI is.
-
-| Setting | Effect | 
-|---------|--------|
-| Low (0.1-0.3) | Conservative, predictable, factual. Same input → similar output. Safe for consistent analysis.| 
-| Medium (0.5-0.8) | Balanced creativity. Varies phrasing but stays grounded. Recommended for most financial analysis.| 
-| High (0.9-1.5) | Creative, varied responses. Different wording each time. Can introduce novel insights but risks less reliable outputs.| 
-
-**Reason:** Financial analysis needs consistency. Low temperature ensures the AI doesn't hallucinate or give wildly different advice for the same data. Higher temperature can be useful for exploring alternative scenarios or brainstorming.
-
-**⚠️ Note:** *"Temperature"* refers to AI response creativity, not GPU hardware temperature. GPU temperature is managed automatically by your computer.
 
 ## 📁 Project Structure
 ```text
