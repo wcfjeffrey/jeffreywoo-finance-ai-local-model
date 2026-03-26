@@ -25,19 +25,15 @@
 - 🌍 **Hong Kong Stock Market Focus** — provide specialized analysis tailored to equities and financial trends in Hong Kong stock market
 - 🔒 **Secure & Scalable Deployment** — built with reproducible workflows and scalable architecture designed for privacy, reliability and enterprise use
 
+## 💡 Finance Transformation Impact
+- Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
+- Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
+- Strengthening risk management with GPU‑accelerated forecasting tools that run entirely on local hardware
+- Driving transformation by aligning AI‑powered analytics with organizational strategy and compliance needs
+- Promoting responsible innovation with secure, **local deployment** that keeps sensitive financial data private
+
 ## 🚀 Why Choose JeffreyWoo HSI Stock Predictor
 Most tools just crunch numbers. **JeffreyWoo HSI Stock Predictor** goes further — embedding AI into your decision-making process so you can anticipate risks, seize opportunities, and align financial strategies with long-term goals.
-
-## 🤖 Tech Stack
-- **Language** — Python (backend) + Vanilla HTML/CSS/JavaScript (frontend)
-- **Framework** — Flask (backend) + Vanilla HTML/CSS/JavaScript (frontend)
-- **UI** — Standard HTML5/CSS3, styled with modern CSS, enhanced with vanilla JavaScript
-- **Runtime** — Python 3.10
-- **ML/AI Libraries** — PyTorch 2.7.1, Transformers, PEFT, bitsandbytes, Accelerate
-- **Model Architecture** — Qwen2.5-7B with LoRA (Low-Rank Adaptation)
-- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM) with CUDA 12.8
-- **Containerization** — Docker with NVIDIA Container Toolkit
-- **Data Processing** — Pandas, NumPy, yFinance
 
 ## 💰 Modeling & AI Techniques Applied
 This app leverages AI and machine learning (ML) methods to automate analysis of Hang Seng Index (HSI) stock movements, and generate predictive insights:
@@ -169,19 +165,23 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 │  └─────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
-## 💡 Finance Transformation Impact
-- Modernizing financial workflows with AI‑driven predictive modeling and real‑time market insights
-- Empowering decision‑makers through scenario simulations and confidence scoring on HSI predictions
-- Strengthening risk management with GPU‑accelerated forecasting tools that run entirely on local hardware
-- Driving transformation by aligning AI‑powered analytics with organizational strategy and compliance needs
-- Promoting responsible innovation with secure, **local deployment** that keeps sensitive financial data private
-
 ## ⭐ Finance Skills Strengthened
 - Designing and deploying full‑stack AI applications for finance
 - Implementing secure environment management and reproducible workflows
 - Integrating fine‑tuned language models (LoRA + Qwen2.5‑7B) into financial analysis pipelines
 - Building data preprocessing and transformation workflows for stock market datasets
 - Developing interactive dashboards and APIs with React, Flask and Node.js for real‑time insights
+
+## 🤖 Tech Stack
+- **Language** — Python (backend) + Vanilla HTML/CSS/JavaScript (frontend)
+- **Framework** — Flask (backend) + Vanilla HTML/CSS/JavaScript (frontend)
+- **UI** — Standard HTML5/CSS3, styled with modern CSS, enhanced with vanilla JavaScript
+- **Runtime** — Python 3.10
+- **ML/AI Libraries** — PyTorch 2.7.1, Transformers, PEFT, bitsandbytes, Accelerate
+- **Model Architecture** — Qwen2.5-7B with LoRA (Low-Rank Adaptation)
+- **Hardware** — NVIDIA RTX 5090 GPU (24GB VRAM) with CUDA 12.8
+- **Containerization** — Docker with NVIDIA Container Toolkit
+- **Data Processing** — Pandas, NumPy, yFinance
 
 ## ✨ Key Features
 
@@ -220,9 +220,6 @@ This project is designed to run **completely locally** on your own hardware. No 
 | ✅ Training Scripts | Included | Data collection, preprocessing and fine-tuning |
 | ❌ Model Weights | **Excluded** | 154 MB - must be trained locally |
 | ❌ Training Checkpoints | **Excluded** | Large checkpoint files |
-
-## ⚖️ Disclaimer
-**JeffreyWoo HSI Stock Predictor** provides AI‑generated insights and predictive analytics for informational and educational purposes only. It is not intended to serve as professional financial, investment or legal advice. Users should always consult qualified financial analysts and investment experts before making financial or business decisions.
 
 ## ⚙️ Run Locally
 
@@ -458,6 +455,16 @@ Example output:
 | ❌ Rate limits | ✅ Unlimited queries |
 | ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
 
+## 🙏 Acknowledgments
+
+- **Qwen** for the Qwen2.5-7B model  
+- **Hugging Face** for transformers and PEFT libraries  
+- **PyTorch** for CUDA 12.8 support  
+- **NVIDIA** for RTX 5090 GPU architecture
+
+## ⚖️ Disclaimer
+**JeffreyWoo HSI Stock Predictor** provides AI‑generated insights and predictive analytics for informational and educational purposes only. It is not intended to serve as professional financial, investment or legal advice. Users should always consult qualified financial analysts and investment experts before making financial or business decisions.
+
 ## 📄 License
 
 MIT License - Free for local deployment and modification.
@@ -468,12 +475,5 @@ Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimizat
 📧 **Email:** jeffreywoocf@gmail.com  
 💼 **LinkedIn:** https://www.linkedin.com/in/wcfjeffrey/  
 🐙 **GitHub:** https://github.com/wcfjeffrey/
-
-## 🙏 Acknowledgments
-
-- **Qwen** for the Qwen2.5-7B model  
-- **Hugging Face** for transformers and PEFT libraries  
-- **PyTorch** for CUDA 12.8 support  
-- **NVIDIA** for RTX 5090 GPU architecture
 
 **Built with ❤️ for local AI deployment | Runs entirely on your own hardware**
