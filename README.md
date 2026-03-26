@@ -201,6 +201,20 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 - Building data preprocessing and transformation workflows for stock market datasets
 - Developing interactive dashboards and APIs with React, Flask and Node.js for real‑time insights
 
+## 🚀 Local Deployment
+
+This project is designed to run **completely locally** on your own hardware. No cloud services, no API keys, no recurring costs.
+  
+## 🙏 Why Local Deployment?
+
+| Cloud-Based | This Local Project |
+|-------------|--------------------|
+| ❌ Monthly API costs | ✅ Free forever |
+| ❌ Data sent to external servers | ✅ 100% private |
+| ❌ Internet dependency | ✅ Works offline |
+| ❌ Rate limits | ✅ Unlimited queries |
+| ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
+
 ## 🏗️ Locally Deployed AI System Architecture
 <pre lang="markdown">
   ┌─────────────────────────────────────────────────────────────┐
@@ -223,20 +237,14 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
   │  Data Storage: Local SSD | Models: models/lora_adapters/    │
   └─────────────────────────────────────────────────────────────┘</pre>
 
-## 🚀 Local Deployment
+### Hardware Requirements
 
-This project is designed to run **completely locally** on your own hardware. No cloud services, no API keys, no recurring costs.
-  
-## 🙏 Why Local Deployment?
-
-| Cloud-Based | This Local Project |
-|-------------|--------------------|
-| ❌ Monthly API costs | ✅ Free forever |
-| ❌ Data sent to external servers | ✅ 100% private |
-| ❌ Internet dependency | ✅ Works offline |
-| ❌ Rate limits | ✅ Unlimited queries |
-| ❌ Latency (500ms+) | ✅ Fast (100-200ms) |
-
+| Component | Minimum | Recommended (Your Setup) |
+|-----------|---------|--------------------------|
+| **GPU** | RTX 4090 (16GB) | ✅ RTX 5090 (24GB) |
+| **RAM** | 32GB | ✅ 96GB |
+| **Storage** | 30GB free | ✅ 6TB SSD |
+| **CUDA** | 12.1 | ✅ 12.8 |
 
 ## ✨ Key Features
 
@@ -264,15 +272,6 @@ This project is designed to run **completely locally** on your own hardware. No 
 ## ⚙️ Run Locally
 
 **Prerequisites:** Node.js, Python, CUDA-enabled GPU
-
-**Hardware Requirements**
-
-| Component | Minimum | Recommended (Your Setup) |
-|-----------|---------|--------------------------|
-| **GPU** | RTX 4090 (16GB) | ✅ RTX 5090 (24GB) |
-| **RAM** | 32GB | ✅ 96GB |
-| **Storage** | 30GB free | ✅ 6TB SSD |
-| **CUDA** | 12.1 | ✅ 12.8 |
 
 ### Step 1: Clone the Repository
 ```
