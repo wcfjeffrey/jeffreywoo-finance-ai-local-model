@@ -465,7 +465,11 @@ Example output:
 - **NVIDIA** for RTX 5090 GPU architecture
 
 ## ⚖️ Disclaimer
-**JeffreyWoo HSI Stock Predictor** provides AI‑generated insights and predictive analytics for informational and educational purposes only. It is not intended to serve as professional financial, investment or legal advice. Users should always consult qualified financial analysts and investment experts before making financial or business decisions.
+**JeffreyWoo HSI Stock Predictor** provides AI‑generated insights and predictive analytics for informational and educational purposes only. It is not intended to serve as professional financial, investment or legal advice.
+
+All predictions, analyses, and outputs are based on historical data and machine learning models; they are not guarantees of future performance. Market conditions change rapidly, and AI models may produce inaccurate or incomplete results.
+
+Users should always consult qualified financial analysts and investment experts before making any investment or business decision. The developer assumes no liability for any losses or damages arising from the use of this app.
 
 ## 📄 License
 
