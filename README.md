@@ -461,14 +461,14 @@ Example output:
 
 ```mermaid
 flowchart TD
-    subgraph TRAIN["📊 PHASE 1: Model Training (One-time)"]
+    subgraph TRAIN["PHASE 1: Model Training (One-time)"]
         direction TB
         T1["Collect HSI Stock Data<br/>python src/data/collector.py"] --> T2["Prepare Dataset<br/>python prepare_dataset.py"]
         T2 --> T3["LoRA Fine-tuning<br/>python train_model_qwen.py"]
         T3 --> T4["Save LoRA Adapters<br/>models/lora_adapters/final/"]
     end
 
-    subGRAPH WEB["🌐 PHASE 2: Web Application Loading"]
+    subGRAPH WEB["PHASE 2: Web Application Loading"]
         direction TB
         W1["User opens browser"] --> W2["http://localhost:5001"]
         W2 --> W3["Flask serves index.html"]
@@ -476,14 +476,14 @@ flowchart TD
         W4 --> W5["Display Stock Analysis UI"]
     end
 
-    subGRAPH QUERY["💬 PHASE 3: User Query & AI Analysis"]
+    subGRAPH QUERY["PHASE 3: User Query & AI Analysis"]
         direction TB
         Q1["Enter stock query<br/>e.g., 'Analyze Tencent 0700.HK'"] --> Q2["Adjust parameters<br/>Max Tokens (50-500)<br/>Temperature (0.1-1.5)"]
         Q2 --> Q3["Click 'Analyze' button"]
         Q3 --> Q4["Frontend sends POST /predict<br/>{prompt, max_tokens, temperature}"]
     end
 
-    subGRAPH INFER["⚡ PHASE 4: Local GPU Inference"]
+    subGRAPH INFER["PHASE 4: Local GPU Inference"]
         direction TB
         I1["Flask formats prompt"] --> I2["Load Qwen2.5-7B + LoRA"]
         I2 --> I3["RTX 5090 GPU inference"]
@@ -491,12 +491,13 @@ flowchart TD
         I4 --> I5["Return JSON response"]
     end
 
-    subGRAPH RESULT["📈 PHASE 5: Display Results"]
+    subGRAPH RESULT["PHASE 5: Display Results"]
         direction TB
         R1["Frontend parses JSON"] --> R2["Update DOM with analysis"]
         R2 --> R3["User reviews AI insights"]
     end
 
+    %% Connections between phases
     T4 --> W1
     W5 --> Q1
     Q4 --> I1
