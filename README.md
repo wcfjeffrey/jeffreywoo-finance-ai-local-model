@@ -457,7 +457,7 @@ Example output:
   <img src="assets/JeffreyWooHSIStockPredictor3b.png" alt="JeffreyWooHSIStockPredictor3b" width="1200" height="1000" />
   <img src="assets/JeffreyWooHSIStockPredictor4.png" alt="JeffreyWooHSIStockPredictor4" width="1200" height="800" />
 
-## Data Flow and Logic Sequence
+## 📐Data Flow and Logic Sequence
 
 ```mermaid
 flowchart TD
