@@ -149,6 +149,7 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 |New Output 🎯 | Professor textbook (unchanged) + Sticky notes (with new expertise) = Finance Expert | Combined general knowledge (W) with stock analysis expertise (B x A)|
 
 #### 🔄 The Fine-Tuning Process Flow
+
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
 │                     LoRA Fine-Tuning Pipeline                   │
@@ -193,6 +194,52 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 │  │   • Share only the 50 MB adapters                       │    │
 │  └─────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────┘</pre>
+
+## 📐Data Flow and Logic Sequence
+
+```mermaid
+flowchart TD
+    subgraph TRAIN["Phase 1: Model Training (One-time)"]
+        direction TB
+        T1["Collect HSI Stock Data"] --> T2["Prepare Dataset"]
+        T2 --> T3["LoRA Fine-tuning Qwen2.5-7B"]
+        T3 --> T4["Save LoRA Adapters 50MB"]
+    end
+
+    subgraph WEB["Phase 2: Web Application Loading"]
+        direction TB
+        W1["Open Browser to localhost:5001"] --> W2["Flask Serves index.html"]
+        W2 --> W3["Load CSS and JavaScript"]
+        W3 --> W4["Display Stock Analysis UI"]
+    end
+
+    subgraph QUERY["Phase 3: User Query and AI Analysis"]
+        direction TB
+        Q1["Enter Stock Query"] --> Q2["Adjust Max Tokens and Temperature"]
+        Q2 --> Q3["Click Analyze Button"]
+        Q3 --> Q4["Send POST /predict Request"]
+    end
+
+    subgraph INFER["Phase 4: Local GPU Inference"]
+        direction TB
+        I1["Flask Formats Prompt"] --> I2["Load Qwen2.5-7B + LoRA"]
+        I2 --> I3["RTX 5090 GPU Inference"]
+        I3 --> I4["Generate Analysis 100-200ms"]
+        I4 --> I5["Return JSON Response"]
+    end
+
+    subgraph RESULT["Phase 5: Display Results"]
+        direction TB
+        R1["Frontend Parses JSON"] --> R2["Update DOM with Analysis"]
+        R2 --> R3["User Reviews AI Insights"]
+    end
+
+    T4 --> W1
+    W4 --> Q1
+    Q4 --> I1
+    I5 --> R1
+    R3 --> Q1
+```
 
 ## ⭐ Finance Skills Strengthened
 - Designing and deploying full‑stack AI applications for finance
@@ -456,52 +503,6 @@ Example output:
   Higher Max Tokens and Temperature:
   <img src="assets/JeffreyWooHSIStockPredictor3b.png" alt="JeffreyWooHSIStockPredictor3b" width="1200" height="1000" />
   <img src="assets/JeffreyWooHSIStockPredictor4.png" alt="JeffreyWooHSIStockPredictor4" width="1200" height="800" />
-
-## 📐Data Flow and Logic Sequence
-
-```mermaid
-flowchart TD
-    subgraph TRAIN["Phase 1: Model Training (One-time)"]
-        direction TB
-        T1["Collect HSI Stock Data"] --> T2["Prepare Dataset"]
-        T2 --> T3["LoRA Fine-tuning Qwen2.5-7B"]
-        T3 --> T4["Save LoRA Adapters 50MB"]
-    end
-
-    subgraph WEB["Phase 2: Web Application Loading"]
-        direction TB
-        W1["Open Browser to localhost:5001"] --> W2["Flask Serves index.html"]
-        W2 --> W3["Load CSS and JavaScript"]
-        W3 --> W4["Display Stock Analysis UI"]
-    end
-
-    subgraph QUERY["Phase 3: User Query and AI Analysis"]
-        direction TB
-        Q1["Enter Stock Query"] --> Q2["Adjust Max Tokens and Temperature"]
-        Q2 --> Q3["Click Analyze Button"]
-        Q3 --> Q4["Send POST /predict Request"]
-    end
-
-    subgraph INFER["Phase 4: Local GPU Inference"]
-        direction TB
-        I1["Flask Formats Prompt"] --> I2["Load Qwen2.5-7B + LoRA"]
-        I2 --> I3["RTX 5090 GPU Inference"]
-        I3 --> I4["Generate Analysis 100-200ms"]
-        I4 --> I5["Return JSON Response"]
-    end
-
-    subgraph RESULT["Phase 5: Display Results"]
-        direction TB
-        R1["Frontend Parses JSON"] --> R2["Update DOM with Analysis"]
-        R2 --> R3["User Reviews AI Insights"]
-    end
-
-    T4 --> W1
-    W4 --> Q1
-    Q4 --> I1
-    I5 --> R1
-    R3 --> Q1
-```
 
 ## 🙏 Acknowledgments
 
