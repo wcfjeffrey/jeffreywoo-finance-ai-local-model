@@ -195,7 +195,9 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 │  └─────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
-## 📐Data Flow and Logic Sequence
+## 📐 Data Flow and Logic Sequence
+
+The following flowchart illustrates how the system works — from training the model on historical HSI data to generating real-time stock predictions through the local web interface.
 
 ```mermaid
 flowchart TD
