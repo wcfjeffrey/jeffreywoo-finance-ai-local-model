@@ -199,6 +199,16 @@ Imagine you're a brilliant professor (the base model) with a thick textbook of k
 
 The following flowchart illustrates how the system works — from training the model on historical HSI data to generating real-time stock predictions through the local web interface.
 
+> **How to read this diagram:** The system follows 5 sequential phases:
+>
+> | Phase | Name | Key Activities | Hardware / Data Component |
+> |-------|------|----------------|---------------------------|
+> | **1** | **Model Training (One-time)** | Collect HSI stock data → prepare dataset → LoRA fine-tune Qwen2.5-7B → save LoRA adapters (~50MB) | RTX 5090 GPU, CUDA 12.8, PyTorch 2.7.1, HSI historical data |
+> | **2** | **Web Application Loading** | Open browser to `localhost:5001` → Flask serves `index.html` → load CSS/JS → display stock analysis UI | Flask, HTML/CSS/JS, localhost |
+> | **3** | **User Query and AI Analysis** | Enter stock query → adjust Max Tokens/Temperature → click Analyze → send `POST /predict` request | Web UI, Flask API, user parameters |
+> | **4** | **Local GPU Inference** | Flask formats prompt → load Qwen2.5-7B + LoRA → RTX 5090 GPU inference (100-200ms) → generate analysis → return JSON response | RTX 5090 GPU (24GB VRAM), Qwen2.5-7B, LoRA adapters |
+> | **5** | **Display Results** | Frontend parses JSON → update DOM with analysis → user reviews AI insights | JavaScript, DOM manipulation, real-time UI |
+
 ```mermaid
 flowchart TD
     subgraph TRAIN["Phase 1: Model Training (One-time)"]
