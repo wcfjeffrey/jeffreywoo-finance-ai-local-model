@@ -461,45 +461,43 @@ Example output:
 
 ```mermaid
 flowchart TD
-    subgraph TRAIN["PHASE 1: Model Training (One-time)"]
+    subgraph TRAIN["Phase 1: Model Training (One-time)"]
         direction TB
-        T1["Collect HSI Stock Data<br/>python src/data/collector.py"] --> T2["Prepare Dataset<br/>python prepare_dataset.py"]
-        T2 --> T3["LoRA Fine-tuning<br/>python train_model_qwen.py"]
-        T3 --> T4["Save LoRA Adapters<br/>models/lora_adapters/final/"]
+        T1["Collect HSI Stock Data"] --> T2["Prepare Dataset"]
+        T2 --> T3["LoRA Fine-tuning Qwen2.5-7B"]
+        T3 --> T4["Save LoRA Adapters 50MB"]
     end
 
-    subGRAPH WEB["PHASE 2: Web Application Loading"]
+    subgraph WEB["Phase 2: Web Application Loading"]
         direction TB
-        W1["User opens browser"] --> W2["http://localhost:5001"]
-        W2 --> W3["Flask serves index.html"]
-        W3 --> W4["Load CSS + JavaScript"]
-        W4 --> W5["Display Stock Analysis UI"]
+        W1["Open Browser to localhost:5001"] --> W2["Flask Serves index.html"]
+        W2 --> W3["Load CSS and JavaScript"]
+        W3 --> W4["Display Stock Analysis UI"]
     end
 
-    subGRAPH QUERY["PHASE 3: User Query & AI Analysis"]
+    subgraph QUERY["Phase 3: User Query and AI Analysis"]
         direction TB
-        Q1["Enter stock query<br/>e.g., 'Analyze Tencent 0700.HK'"] --> Q2["Adjust parameters<br/>Max Tokens (50-500)<br/>Temperature (0.1-1.5)"]
-        Q2 --> Q3["Click 'Analyze' button"]
-        Q3 --> Q4["Frontend sends POST /predict<br/>{prompt, max_tokens, temperature}"]
+        Q1["Enter Stock Query"] --> Q2["Adjust Max Tokens and Temperature"]
+        Q2 --> Q3["Click Analyze Button"]
+        Q3 --> Q4["Send POST /predict Request"]
     end
 
-    subGRAPH INFER["PHASE 4: Local GPU Inference"]
+    subgraph INFER["Phase 4: Local GPU Inference"]
         direction TB
-        I1["Flask formats prompt"] --> I2["Load Qwen2.5-7B + LoRA"]
-        I2 --> I3["RTX 5090 GPU inference"]
-        I3 --> I4["Generate analysis (100-200ms)"]
-        I4 --> I5["Return JSON response"]
+        I1["Flask Formats Prompt"] --> I2["Load Qwen2.5-7B + LoRA"]
+        I2 --> I3["RTX 5090 GPU Inference"]
+        I3 --> I4["Generate Analysis 100-200ms"]
+        I4 --> I5["Return JSON Response"]
     end
 
-    subGRAPH RESULT["PHASE 5: Display Results"]
+    subgraph RESULT["Phase 5: Display Results"]
         direction TB
-        R1["Frontend parses JSON"] --> R2["Update DOM with analysis"]
-        R2 --> R3["User reviews AI insights"]
+        R1["Frontend Parses JSON"] --> R2["Update DOM with Analysis"]
+        R2 --> R3["User Reviews AI Insights"]
     end
 
-    %% Connections between phases
     T4 --> W1
-    W5 --> Q1
+    W4 --> Q1
     Q4 --> I1
     I5 --> R1
     R3 --> Q1
