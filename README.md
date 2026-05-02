@@ -523,6 +523,13 @@ Example output:
 - **PyTorch** for CUDA 12.8 support  
 - **NVIDIA** for RTX 5090 GPU architecture
 
+## References
+
+- [Qwen Team. (2024). *Qwen2.5-7B: A 7-billion-parameter large language model*. Hugging Face.](https://huggingface.co/Qwen/Qwen2.5-7B)
+- [Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W. (2021). LoRA: Low-Rank Adaptation of Large Language Models. arXiv preprint arXiv:2106.09685.](https://arxiv.org/abs/2106.09685)
+- [Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A., Kopf, A., Yang, E., DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S., Steiner, B., Fang, L., ... Chintala, S. (2019). PyTorch: An Imperative Style, High-Performance Deep Learning Library. In Advances in Neural Information Processing Systems 32 (NeurIPS 2019).](https://papers.nips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf)
+- [Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen, P., Ma, C., Jernite, Y., Plu, J., Xu, C., Le Scao, T., Gugger, S., ... Rush, A. M. (2020). Transformers: State-of-the-Art Natural Language Processing. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations (pp. 38–45). Association for Computational Linguistics.](https://aclanthology.org/2020.emnlp-demos.6/)
+
 ## ⚖️ Disclaimer
 **JeffreyWoo HSI Stock Predictor** provides AI‑generated insights and predictive analytics for informational and educational purposes only. It is not intended to serve as professional financial, investment or legal advice.
 
