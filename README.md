@@ -523,7 +523,7 @@ Example output:
 - **PyTorch** for CUDA 12.8 support  
 - **NVIDIA** for RTX 5090 GPU architecture
 
-## References
+## 📚 References
 
 - [Qwen Team. (2024). *Qwen2.5-7B: A 7-billion-parameter large language model*. Hugging Face.](https://huggingface.co/Qwen/Qwen2.5-7B)
 - [Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W. (2021). LoRA: Low-Rank Adaptation of Large Language Models. arXiv preprint arXiv:2106.09685.](https://arxiv.org/abs/2106.09685)
